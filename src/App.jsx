@@ -1,18 +1,29 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Hero from './components/Hero'
+import Navigation from './components/Navigation'
+import AboutMe from './components/AboutMe'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
+import 'smoothscroll-polyfill';
+
+// Initialize the polyfill
+window.__forceSmoothScrollPolyfill__ = true;
 
 const App = () => {
+  const scrollToSection = (sectionId) => {
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content text-center">
-          <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Hello there</h1>
-            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button className="btn btn-primary">Get Started</button>
-          </div>
-        </div>
+      <div>
+        <Navigation scrollToSection={scrollToSection}/>
+        <Hero />
+        <AboutMe />
+        <Projects />
+        <Footer />
       </div>
   )
 }
