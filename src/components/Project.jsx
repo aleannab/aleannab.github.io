@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import image from "../assets/temp.jpg";
 
 const Project = ({title}) => {
@@ -8,7 +9,9 @@ const Project = ({title}) => {
         <h2 className="card-title">{title}</h2>
         <p>Aenean ullamcorper quam ante, et eleifend libero laoreet a.</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">View</button>
+          <Link to="projects/test">
+            <button className="btn btn-primary">View</button>
+          </Link>
         </div>
       </div>
     </div>
