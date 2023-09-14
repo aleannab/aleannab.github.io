@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import image from "../assets/temp.jpg";
 
-const Project = ({title}) => {
+const ProjectCard = ({title}) => {
   return (
     <div className="card bg-base-100 shadow-xl">
       <div className="card-body">
@@ -18,4 +18,4 @@ const Project = ({title}) => {
   );
 }
 
-export default Project;
+export default ProjectCard;

@@ -7,7 +7,7 @@ import {
 import Root from "./routes/Root";
 import ErrorPage from "./error-page";
 import App from "./App";
-import EmergingRadiance from './components/EmergingRadiance';
+import ProjectTemplate from './components/ProjectTemplate';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/projects/test/",
-        element: <EmergingRadiance />,
+        element: <ProjectTemplate />,
       }
     ]
   },
