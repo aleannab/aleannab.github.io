@@ -1,8 +1,40 @@
 import React, { useState } from 'react';
 import ProjectInfo from './ProjectInfo'
 import image from "../assets/temp-banner.png";
+import MyGallery from "./MyGallery";
+import { photos } from "../assets/photos";
 
 const ProjectTemplate = () => {
+
+  const [name] = useState('React');
+
+  const images = [
+    {
+      largeURL:
+        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg',
+      thumbnailURL:
+        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg',
+      width: 1875,
+      height: 2500,
+    },
+    {
+      largeURL:
+        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg',
+      thumbnailURL:
+        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg',
+      width: 1669,
+      height: 2500,
+    },
+    {
+      largeURL:
+        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
+      thumbnailURL:
+        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
+      width: 2500,
+      height: 1666,
+    },
+  ];
+
   return (
     <div className="flex flex-col justify-center items-center p-10">
       <div className="max-w-5xl space-y-10">
@@ -16,9 +48,8 @@ const ProjectTemplate = () => {
           <ProjectInfo title="Tools"/>
           <ProjectInfo title="Year"/>
         </div>
-
+        <MyGallery galleryID="my-test-gallery" images={images} />
       </div>
-      
     </div>
   );
 };
