@@ -1,12 +1,11 @@
 import React from 'react';
 
-const ProjectInfo = ({title}) => {
+const ProjectInfo = ({data}) => {
   return (
     <div className="flex flex-col">
-      <h1 className="italic">{title}</h1>
+      <h1 className="italic">{data.label}</h1>
       <ul>
-        <li>sfef </li>
-        <li>Ipsum</li>
+        <li><a href={data.link} target="_blank">{data.content}</a></li>
       </ul>
     </div>
   );
