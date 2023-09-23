@@ -24,7 +24,7 @@ const MyGallery = (props) => {
     >
       {props.images.map((image, index) => (
         <a
-          href={image.largeURL}
+          href={image.src}
           data-pswp-width={image.width}
           data-pswp-height={image.height}
           key={props.galleryID + '-' + index}
@@ -32,7 +32,7 @@ const MyGallery = (props) => {
           rel="noreferrer"
         >
           <img
-            src={image.thumbnailURL}
+            src={image.src} //update
             alt=""
             className="cursor-pointer w-full h-auto rounded-lg transition duration-300 transform hover:scale-105"
           />

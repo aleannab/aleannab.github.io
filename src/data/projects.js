@@ -5,10 +5,12 @@ const projects = [
     thumb: "",
     cover: "cover.jpg",
     images: [
-      { id: 1, src: "image1.jpg", caption: "Image 1" },
-      { id: 2, src: "image2.jpg", caption: "Image 2" },
+      { id: 1, src: "/assets/em-ra-00.jpg", width: 2048, height: 1536, caption: "Image 1" },
+      { id: 2, src: "/assets/em-ra-01.jpg", width: 2048, height: 1152, caption: "Image 1" },
+      { id: 3, src: "/assets/em-ra-02.jpg", width: 2048, height: 1536, caption: "Image 1" },
+      { id: 4, src: "/assets/em-ra-03.jpg", width: 1940, height: 1940, caption: "Image 1" },
     ],
-    description: "An “Immersive Memory” experience, Emerging Radiance celebrates the untold stories of Japanese American farmers who were taken from their homes and unjustly incarcerated during WWII. In partnership with Creative Director Tani Ikeda and Muralist Michelle Kumata, Invisible Thread harnessed Augmented Reality’s unrivaled ability to tell location-based stories by weaving together art, animation, archival audio recordings, and immersive technology to create a collection of far-reaching experiences that ultimately continue to give voice to the stories of our past for the generations of tomorrow.\n\nI was part of Invisible Thread’s technical artist team that brought this creative vision to reality in Spark AR.\n\nEmerging Radiance won the Tribeca X Award for Best Immersive Experience and is currently being considered for a Peabody Award.",
+    description: "An “Immersive Memory” experience, Emerging Radiance celebrates the untold stories of Japanese American farmers who were taken from their homes and unjustly incarcerated during WWII. In partnership with Creative Director Tani Ikeda and Muralist Michelle Kumata, Invisible Thread harnessed Augmented Reality’s unrivaled ability to tell location-based stories by weaving together art, animation, archival audio recordings, and immersive technology to create a collection of far-reaching experiences that ultimately continue to give voice to the stories of our past for the generations of tomorrow.\n\nI was part of Invisible Thread’s technical artist team that brought this creative vision to reality in Spark AR.\n\nEmerging Radiance won the Tribeca X Award for Best Immersive Experience and is currently being considered for a Peabody Award..",
     details: [
       {label: "Role", content: "Technical Artist"},
       {label: "Tools", content: ["Spark AR, Blender"]},
