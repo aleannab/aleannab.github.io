@@ -3,6 +3,7 @@ import ProjectInfo from './ProjectInfo'
 import image from "../assets/temp-banner.png";
 import MyGallery from "./MyGallery";
 import { useLocation } from 'react-router-dom';
+import '../styles/main.css';
 
 const ProjectTemplate = () => {
   const location = useLocation();
@@ -42,7 +43,7 @@ const ProjectTemplate = () => {
       <div className="max-w-5xl space-y-10">
         <img src={image} className="object-contain object-center justify-center rounded-lg shadow-2xl" />
         <h1 className="text-6xl font-bold text-center">{projectData.name}</h1>
-        <p>{projectData.description}
+        <p className="caption">{projectData.description}
         </p>
         <div className="flex w-full flex-col md:flex-row justify-between" >
         {projectData.details.map((detail) => (
