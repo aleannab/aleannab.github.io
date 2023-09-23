@@ -24,6 +24,15 @@ const ProjectTemplate = () => {
         ))}
         </div>
         <MyGallery galleryID="my-test-gallery" images={projectData.images} />
+        {projectData.videoUrl && (
+          <iframe
+            src={projectData.videoUrl}
+            width="640"
+            height="360"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        )}
       </div>
     </div>
   );

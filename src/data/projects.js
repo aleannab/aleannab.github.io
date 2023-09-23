@@ -19,6 +19,7 @@ const projects = [
       {label: "View", content:"Site", link: "https://www.emergingradiance.co/"},
       {label: "Year", content:"2022"},
     ],
+    videoUrl: "https://player.vimeo.com/video/702912105?h=bf4c10c68",
   },
   {
     id: 2,
