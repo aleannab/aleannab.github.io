@@ -23,15 +23,20 @@ const ProjectTemplate = () => {
           <ProjectInfo data={detail} />
         ))}
         </div>
-        <MyGallery galleryID="my-test-gallery" images={projectData.images} />
-        {projectData.videoUrl && (
-          <iframe
-            src={projectData.videoUrl}
-            width="640"
-            height="360"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        {projectData.images && projectData.images.length > 0 && (
+          <MyGallery galleryID="my-test-gallery" images={projectData.images} />
+        )}
+        {projectData.videos && projectData.videos.length > 0 && (
+          projectData.videos.map((video, index) => (
+            <iframe
+              src={video.src}
+              width="640"
+              height="360"
+              allow="fullscreen; picture-in-picture"
+              allowFullScreen
+              autoplay="false"
+            ></iframe>
+          ))
         )}
       </div>
     </div>
