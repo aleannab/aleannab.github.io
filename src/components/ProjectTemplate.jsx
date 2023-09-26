@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProjectInfo from './ProjectInfo'
 import MyGallery from "./MyGallery";
+import Footer from "./Footer"
 import { useLocation } from 'react-router-dom';
 import '../styles/main.css';
 
@@ -11,6 +12,7 @@ const ProjectTemplate = () => {
   const [name] = useState('React');
 
   return (
+    <div>
     <div className="max-w-full flex items-center justify-center">
       <div className="p-10 w-auto max-w-5xl space-y-12">
         <div className="flex flex-col lg:flex-row justify-between items-center">
@@ -40,6 +42,8 @@ const ProjectTemplate = () => {
         )}
         
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };
