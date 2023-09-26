@@ -19,7 +19,7 @@ const MyGallery = (props) => {
 
   return (
     <div
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
+      className="grid grid-cols-1 sm:grid-cols-2 gap-10"
       id={props.galleryID}
     >
       {props.images.map((image, index) => (
