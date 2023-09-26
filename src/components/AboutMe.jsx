@@ -5,9 +5,9 @@ const AboutMe = () => {
   return (
     <div id="aboutme" className="flex flex-col justify-center items-center lg:flex-row-reverse p-10">
       <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
-      <div className="max-w-lg text-center p-6">
+      <div className="max-w-lg text-left p-6">
         <h1 className="text-5xl font-bold">Hi, I'm Antoinette.</h1>
-        <p className="py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo scelerisque diam, facilisis blandit orci sodales vitae. Morbi id laoreet felis. Phasellus ante purus, blandit quis convallis non, cursus quis odio. Vestibulum eu nisi eu mi sodales fermentum. Aliquam elementum diam et ante ornare luctus. Etiam egestas, lectus nec fringilla cursus, purus ex facilisis orci, in elementum mauris est aliquam tellus. Quisque at consequat mi, eget porta nunc. Fusce vitae justo augue. Suspendisse quis urna in mi posuere interdum.
+        <p className="py-6">I have six years of professional experience bringing concepts to reality in varying scales of interactive media, from intimate augmented reality storytelling on a phone screen to navigating collections of art projected on massive touch film walls. Ultimately, I love combining my interests of art and technology to create beautiful captivating experiences that inspire curiosity, joy, movement, and play.
         </p>
       </div>
     </div>
