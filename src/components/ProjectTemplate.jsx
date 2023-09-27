@@ -1,16 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectInfo from './ProjectInfo'
 import MyGallery from "./MyGallery";
 import Footer from "./Footer"
-import { useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import '../styles/main.css';
+import projects from '../data/projects.js'
 
 const ProjectTemplate = () => {
-  const location = useLocation();
-  const { projectData } = location.state;
+  // Get the projectId from the URL
+  const { projectId } = useParams();
 
-  const [name] = useState('React');
+  // Find the project that matches the projectId
+  const projectData = projects.find((p) => p.id === parseInt(projectId, 10));
 
+  if (!projectData) {
+    // Handle the case where no matching project is found
+    return <div>Project not found</div>;
+  }
+  
   return (
     <div>
     <div className="max-w-full flex items-center justify-center">

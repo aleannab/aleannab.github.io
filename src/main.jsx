@@ -8,6 +8,7 @@ import Root from "./routes/Root";
 import ErrorPage from "./error-page";
 import App from "./App";
 import ProjectTemplate from './components/ProjectTemplate';
+import ProjectDetails from './components/ProjectDetails';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/projects/:projectId",
         element: <ProjectTemplate />,
+        component: {ProjectDetails},
       }
     ]
   },
