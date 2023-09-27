@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-      <div>
+      <div className="flex flex-col items-center justify-center">
         <Hero />
         <AboutMe />
         <ProjectList />
