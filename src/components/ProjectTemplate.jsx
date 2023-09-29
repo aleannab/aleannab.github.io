@@ -25,7 +25,7 @@ const ProjectTemplate = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <img src={projectData.hero} className="max-w-sm rounded-lg shadow-2xl" />
           <div className="w-auto p-6">
-            <h1 className="text-5xl font-bold text-center lg:text-left">{projectData.name}</h1>
+            <h1 className="text-5xl font-bold text-center lg:text-left text-primary">{projectData.name}</h1>
             <p className="py-6 text-left">{projectData.description}</p>
             <div className="flex w-full flex-col md:flex-row justify-between" >
               {projectData.details.map((detail) => (
