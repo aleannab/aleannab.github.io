@@ -3,7 +3,7 @@ import Navigation from '../components/Navigation'
 
 const Root = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center w-full">
       <Navigation />
       <Outlet />
     </div>

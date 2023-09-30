@@ -13,6 +13,7 @@
     "dev:tailwind": "npm-run-all --parallel watch:tailwind dev"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "daisyui": "^3.6.4",
     "photoswipe": "^5.4.0",
     "react": "^18.2.0",

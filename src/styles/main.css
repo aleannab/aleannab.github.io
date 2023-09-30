@@ -1,3 +1,11 @@
 .caption {
   white-space: pre-line;
 }
+
+.menu-content {
+  opacity: 0;
+}
+
+.menu-init {
+  opacity: 0;
+}
