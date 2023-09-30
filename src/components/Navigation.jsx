@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import anime from 'animejs/lib/anime.es.js';
 import '../styles/main.css'
@@ -25,8 +25,6 @@ const Navigation = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
-
-
     if (isMenuOpen) {
       closeMenu();
     } else {
@@ -46,8 +44,6 @@ const Navigation = () => {
       opacity: '1',
       duration: 3000
     });
-    console.log("closed");
-
   };
 
   const openMenu = () => {
@@ -61,14 +57,27 @@ const Navigation = () => {
       opacity: '0',
       duration: 3000
     });
-    console.log("opened");
   };
+
+  const handleScroll = () => {
+    if (isMenuOpen) toggleMenu();
+  };
+
+  useEffect(() => {
+    // Add an event listener for the scroll event
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isMenuOpen]);
 
   return (
     <div className="flex flex-col fixed top-0 z-10 w-full justify-center items-center max-w-5xl">
       <ul className="menu w-auto ml-auto">
         <li>
-          <button className='hamburger relative w-auto h-auto bg-purple-500' onClick={() => toggleMenu()}>
+          <button className='hamburger relative w-auto h-auto' onClick={() => toggleMenu()}>
             <svg className='menu-open absolute w-6 h-6' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
