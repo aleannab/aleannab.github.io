@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectInfo = ({data}) => {
+const ProjectInfo = ({ data }) => {
   return (
     <div className="flex flex-col">
       <h1 className="italic text-primary">{data.label}</h1>
@@ -8,7 +8,11 @@ const ProjectInfo = ({data}) => {
         {data.content.map((item) => (
           <li>
             {data.link ? (
-              <a className="link link-secondary" href={data.link} target="_blank">
+              <a
+                className="link link-secondary"
+                href={data.link}
+                target="_blank"
+              >
                 {item}
               </a>
             ) : (
@@ -19,6 +23,6 @@ const ProjectInfo = ({data}) => {
       </ul>
     </div>
   );
-}
+};
 
 export default ProjectInfo;

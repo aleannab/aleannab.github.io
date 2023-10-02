@@ -18,21 +18,11 @@ const MyGallery = (props) => {
   }, []);
 
   return (
-    <div
-      className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center justify-center"
-      id={props.galleryID}
-    >
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center justify-center" id={props.galleryID}>
       {props.images.map((image, index) => (
-        <a
-          href={image.src}
-          data-pswp-width={image.width}
-          data-pswp-height={image.height}
-          key={props.galleryID + '-' + index}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={image.src} data-pswp-width={image.width} data-pswp-height={image.height} key={props.galleryID + '-' + index} target="_blank" rel="noreferrer">
           <img
-            src={image.src} //update
+            src={image.src} //TODO: update to thumbnails
             alt=""
             className="cursor-pointer w-full h-auto rounded-lg transition duration-300 transform hover:scale-105"
           />

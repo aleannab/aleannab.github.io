@@ -1,11 +1,11 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link } from 'react-router-dom';
 
 const Root = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full">
+    <div>
       <Outlet />
     </div>
   );
-}
+};
 
 export default Root;
