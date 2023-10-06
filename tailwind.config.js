@@ -2,21 +2,28 @@
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './index.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Raleway', 'Roboto', 'sans'], // Replace 'Your-Font-Family' with your desired font 
+        serif: ['Comfortaa', 'serif'], // Specify the font for headers
+      },
+    },
   },
   daisyui: {
     themes: [
       {
         mytheme: {
-          "primary": "#730B44",
-          "secondary": "#7677A2",
-          "accent": "#D0975A",
-          "neutral": "#faf7f9",
-          "base-100": "#faf7f9",
-          "info": "#15151E",
+          "primary": "#5B3580",
+          "secondary": "#63D5FF",
+          "secondary-focus": "#114B5F",
+          "accent": "#E9D2F4",
+          "accent-focus": "#F5DD90",
+          "neutral": "#EAEAE7",
+          "base-100": "#EAEAE7",
+          "info": "#24003C",
           "success": "#587e4c",
           "warning": "#d56e14",
-          "error": "#f44336",
+          "error": "#f44336"
         },
       },
       "dracula", 

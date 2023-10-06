@@ -9,12 +9,12 @@ const App = () => {
     <div className="w-full flex flex-col items-center justify-center">
       <Navigation />
       <Hero />
-      <div className="max-w-5xl px-10 bg-purple-200">
+      <div className="max-w-5xl px-10">
         <AboutMe />
         <ProjectList />
       </div>
 
-      <Footer />
+      <Footer className="bg-secondary" />
     </div>
   );
 };
