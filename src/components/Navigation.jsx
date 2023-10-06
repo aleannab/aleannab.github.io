@@ -72,13 +72,10 @@ const Navigation = ({ isMain = true }) => {
   }
 
   return (
-    <div className="max-w-5xl w-full flex flex-col top-0 z-10  justify-center items-center fixed">
+    <div className="max-w-5xl w-full flex flex-col top-0 z-50 justify-center items-center fixed">
       <ul className="menu w-auto ml-auto">
         <li>
-          <button
-            className="w-auto h-auto relative"
-            onClick={() => toggleMenu()}
-          >
+          <button className="w-auto h-auto relative" onClick={() => toggleMenu()}>
             {isMain && (
               <svg
                 className="menu-open w-6 h-6 absolute"
@@ -88,46 +85,26 @@ const Navigation = ({ isMain = true }) => {
                 strokeWidth={1.5}
                 stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             )}
             <svg
-              className={`menu-close ${
-                isMain ? 'menu-content' : ''
-              } w-6 h-6 relative`}
+              className={`menu-close ${isMain ? 'menu-content' : ''} w-6 h-6 relative`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </li>
         {isMain && (
           <div className="menu-content">
             <li>
-              <button
-                onClick={() => scrollToSection('home')}
-                disabled={!isMenuOpen}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
+              <button onClick={() => scrollToSection('home')} disabled={!isMenuOpen}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -137,18 +114,8 @@ const Navigation = ({ isMain = true }) => {
               </button>
             </li>
             <li>
-              <button
-                onClick={() => scrollToSection('aboutme')}
-                disabled={!isMenuOpen}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
+              <button onClick={() => scrollToSection('aboutme')} disabled={!isMenuOpen}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -158,18 +125,8 @@ const Navigation = ({ isMain = true }) => {
               </button>
             </li>
             <li>
-              <button
-                onClick={() => scrollToSection('projects')}
-                disabled={!isMenuOpen}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
+              <button onClick={() => scrollToSection('projects')} disabled={!isMenuOpen}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"

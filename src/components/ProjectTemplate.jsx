@@ -25,7 +25,7 @@ const ProjectTemplate = () => {
       <div className="max-w-full flex items-center justify-center">
         <div className="w-auto max-w-5xl p-14 space-y-10">
           <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
-            <img src={projectData.hero} className="max-w-sm rounded-lg shadow-2xl" />
+            <img src={projectData.hero} className="max-w-sm border-8 border-primary rounded-lg shadow-2xl" />
             <div className="w-auto">
               <h1 className="text-5xl font-bold text-center lg:text-left text-primary">{projectData.name}</h1>
               <p className="py-6 text-left">{projectData.description}</p>
