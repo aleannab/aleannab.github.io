@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       // Specify entry points for your application here
       input: {
-        main: './src/main.js', // Adjust the path to your entry file
+        main: './src/main.jsx', // Adjust the path to your entry file
       },
     },
   },

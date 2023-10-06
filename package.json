@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://aleannab.github.io/",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -10,7 +11,8 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "watch:tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "dev:tailwind": "npm-run-all --parallel watch:tailwind dev"
+    "dev:tailwind": "npm-run-all --parallel watch:tailwind dev",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "animejs": "^3.2.1",
@@ -31,6 +33,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.30",
     "tailwindcss": "^3.3.3",
