@@ -6,6 +6,7 @@ import ErrorPage from './error-page';
 import Home from './components/Home';
 import ProjectTemplate from './components/ProjectTemplate';
 import ProjectDetails from './components/ProjectDetails';
+import './input.css';
 
 const router = createBrowserRouter([
   {
