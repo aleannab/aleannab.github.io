@@ -39,13 +39,13 @@ const ProjectTemplate = () => {
           {projectData.videos &&
             projectData.videos.length > 0 &&
             projectData.videos.map((video, index) => (
-              <iframe
+              <video
                 className="w-full aspect-video rounded-lg "
                 src={video.src}
                 allow="fullscreen; picture-in-picture"
                 allowFullScreen
-                title="Video"
-              ></iframe>
+                controls
+              ></video>
             ))}
           {projectData.images && projectData.images.length > 0 && <MyGallery galleryID="my-test-gallery" images={projectData.images} />}
         </div>
