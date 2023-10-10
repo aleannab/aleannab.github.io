@@ -11,7 +11,7 @@ const projects = [
       { id: 3, src: "/assets/em-ra-03.jpg", width: 1940, height: 1940, caption: "Image 1" },
     ],
     videos: [
-      { id: 4, src:"/assets/dayOfRemembrance.mp4"}
+      { id: 4, src:"https://player.vimeo.com/video/702912105?h=bf4c10c68"}
     ],
     description: "An “Immersive Memory” experience, Emerging Radiance celebrates the untold stories of Japanese American farmers who were taken from their homes and unjustly incarcerated during WWII. In partnership with Creative Director Tani Ikeda and Muralist Michelle Kumata, Invisible Thread harnessed Augmented Reality’s unrivaled ability to tell location-based stories by weaving together art, animation, archival audio recordings, and immersive technology to create a collection of far-reaching experiences that ultimately continue to give voice to the stories of our past for the generations of tomorrow.\n\nI was part of Invisible Thread’s technical artist team that brought this creative vision to reality in Spark AR.\n\nEmerging Radiance won the Tribeca X Award for Best Immersive Experience and is currently being considered for a Peabody Award..",
     details: [
