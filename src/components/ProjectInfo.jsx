@@ -6,13 +6,9 @@ const ProjectInfo = ({ data }) => {
       <h1 className="italic text-primary">{data.label}</h1>
       <ul>
         {data.content.map((item) => (
-          <li>
+          <li key={item}>
             {data.link ? (
-              <a
-                className="link link-secondary"
-                href={data.link}
-                target="_blank"
-              >
+              <a className="link link-secondary" href={data.link} target="_blank">
                 {item}
               </a>
             ) : (

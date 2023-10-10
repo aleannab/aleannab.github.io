@@ -22,7 +22,7 @@ const ProjectTemplate = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center overflow-hidden">
       <Navigation isMain={false} />
-      <div className="flex items-center justify-center py-10 px-20">
+      <div className="flex items-center justify-center px-20">
         <div className="w-full max-w-5xl space-y-10 items-center justify-center py-[18%] px-[5%]">
           <div className="flex flex-col lg:flex-row items-center justify-between items-start gap-10">
             <img src={projectData.hero} className="max-w-sm border-8 border-primary rounded-lg shadow-2xl" />
@@ -31,7 +31,7 @@ const ProjectTemplate = () => {
               <p className="py-6 text-left">{projectData.description}</p>
               <div className="flex w-full flex-col md:flex-row justify-between">
                 {projectData.details.map((detail) => (
-                  <ProjectInfo data={detail} />
+                  <ProjectInfo key={detail.id} data={detail} />
                 ))}
               </div>
             </div>
@@ -40,6 +40,7 @@ const ProjectTemplate = () => {
             projectData.videos.length > 0 &&
             projectData.videos.map((video, index) => (
               <video
+                key={video.id}
                 className="w-full aspect-video rounded-lg "
                 src={video.src}
                 allow="fullscreen; picture-in-picture"
