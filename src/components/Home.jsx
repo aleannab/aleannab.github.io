@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 const App = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center overflow-x-hidden">
+    <div className="w-full flex flex-col relative items-center justify-center overflow-hidden">
       <Navigation />
       <Hero />
       <div className="max-w-5xl px-10">

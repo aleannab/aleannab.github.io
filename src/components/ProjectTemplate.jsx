@@ -20,7 +20,7 @@ const ProjectTemplate = () => {
   }
 
   return (
-    <div className="w-full flex flex-col p-10 items-center justify-center">
+    <div className="w-full flex flex-col p-10 items-center justify-center overflow-hidden">
       <Navigation isMain={false} />
       <div className="max-w-full flex items-center justify-center">
         <div className="w-auto max-w-5xl p-14 space-y-10">
