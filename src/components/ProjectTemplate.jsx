@@ -20,13 +20,13 @@ const ProjectTemplate = () => {
   }
 
   return (
-    <div className="w-full flex flex-col p-10 items-center justify-center overflow-hidden">
+    <div className="w-full flex flex-col items-center justify-center overflow-hidden">
       <Navigation isMain={false} />
-      <div className="max-w-full flex items-center justify-center">
-        <div className="w-auto max-w-5xl p-14 space-y-10">
-          <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
+      <div className="flex items-center justify-center py-10 px-20">
+        <div className="w-full max-w-5xl space-y-10 items-center justify-center py-[18%] px-[5%]">
+          <div className="flex flex-col lg:flex-row items-center justify-between items-start gap-10">
             <img src={projectData.hero} className="max-w-sm border-8 border-primary rounded-lg shadow-2xl" />
-            <div className="w-auto">
+            <div className="flex flex-col px-10">
               <h1 className="text-5xl font-bold text-center lg:text-left text-primary">{projectData.name}</h1>
               <p className="py-6 text-left">{projectData.description}</p>
               <div className="flex w-full flex-col md:flex-row justify-between">
