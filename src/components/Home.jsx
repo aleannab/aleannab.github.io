@@ -9,10 +9,10 @@ const App = () => {
     <div className="w-full flex flex-col relative items-center justify-center overflow-hidden">
       <Navigation />
       <Hero />
-      <div className="max-w-5xl px-20">
-        <AboutMe />
-        <ProjectList />
-      </div>
+      {/* <div className="w-full"> */}
+      <AboutMe />
+      <ProjectList />
+      {/* </div> */}
 
       <Footer className="bg-secondary" />
     </div>
