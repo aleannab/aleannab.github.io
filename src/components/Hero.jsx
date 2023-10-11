@@ -1,10 +1,12 @@
 import React from 'react';
-import illustration from '../assets/temp/abstract.svg';
+import left from '../assets/temp/abstract-left.svg';
+import right from '../assets/temp/abstract-right.svg';
 
 const Hero = () => {
   return (
-    <div id="home" className="hero relative min-h-screen bg-base-100 overflow-visible z-20">
-      <img src={illustration} className="absolute top-0 left-0 w-full h-auto object-cover object-center drop-shadow-xl" />
+    <div id="home" className="hero relative min-h-screen overflow-y-visible">
+      <img src={left} className="absolute top-0 left-0 min-h-full object-cover z-[-20] max-w-2xl" />
+      <img src={right} className="absolute top-0 right-0 min-h-full object-cover z-[-30] max-w-2xl" />
       <div className="hero-content relative text-center">
         <div className="max-w-6xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary">Antoinette Bumatay-Chan</h1>
