@@ -12,10 +12,10 @@ const Hero = () => {
       <img src={left} className="absolute top-0 left-0 min-h-full object-cover z-[-20] max-w-2xl" />
       <img src={right} className="absolute top-0 right-0 min-h-full object-cover z-[-30] max-w-2xl" />
       <div className="hero-content relative text-center">
-        <div className="max-w-6xl">
-          <h1 className="text-reveal-hero text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary">Antoinette Bumatay-Chan</h1>
-          <p className="text-reveal-hero py-6 font-sans">Creative Developer | Art + Technology</p>
-          <p className="text-reveal-hero py-6 font-sans">Still under construction... but feel free to poke around. :]</p>
+        <div className="max-w-6xl reveal-slide-hero opacity-0">
+          <h1 className="reveal-slide-hero text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary">Antoinette Bumatay-Chan</h1>
+          <p className="reveal-slide-hero py-6 font-sans">Creative Developer | Art + Technology</p>
+          <p className="reveal-slide-hero py-6 font-sans">Still under construction... but feel free to poke around. :]</p>
         </div>
       </div>
     </div>
