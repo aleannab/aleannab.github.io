@@ -9,11 +9,8 @@ const App = () => {
     <div className="w-full flex flex-col relative items-center justify-center overflow-hidden">
       <Navigation />
       <Hero />
-      {/* <div className="w-full"> */}
       <AboutMe />
       <ProjectList />
-      {/* </div> */}
-
       <Footer className="bg-secondary" />
     </div>
   );
