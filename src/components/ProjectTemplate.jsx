@@ -20,35 +20,36 @@ const ProjectTemplate = () => {
   }
 
   return (
-    <div className="w-full flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-full flex flex-col items-center justify-center overflow-hidden">
+      <div className="absolute pattern w-full h-full z-[-30]" />
       <Navigation isMain={false} />
-      <div className="flex items-center justify-center px-20">
-        <div className="w-full max-w-5xl space-y-10 items-center justify-center py-[18%] px-[5%]">
-          <div className="flex flex-col lg:flex-row items-center justify-between items-start gap-10">
-            <img src={projectData.hero} className="max-w-sm border-8 border-primary rounded-lg shadow-2xl" />
-            <div className="flex flex-col px-10">
-              <h1 className="text-5xl font-bold text-center lg:text-left text-primary">{projectData.name}</h1>
-              <p className="py-6 text-left">{projectData.description}</p>
-              <div className="flex w-full flex-col md:flex-row justify-between">
-                {projectData.details.map((detail) => (
-                  <ProjectInfo key={detail.id} data={detail} />
-                ))}
-              </div>
-            </div>
+      <div className="flex flex-col w-full max-w-5xl space-y-10 items-center justify-center py-[10%] px-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between items-start gap-10">
+          <img src={projectData.hero} className="max-w-xs border-8 border-primary rounded-lg shadow-2xl" />
+          <div className="flex flex-col">
+            <h1 className="text-4xl font-serif font-bold text-center lg:text-left text-primary">{projectData.name}</h1>
+            <p className="py-6 text-lg text-left whitespace-pre-line">{projectData.description}</p>
           </div>
-          {projectData.videos &&
-            projectData.videos.length > 0 &&
-            projectData.videos.map((video, index) => (
-              <div key={video.id}>
-                {video.src.startsWith('http') ? (
-                  <iframe className="w-full aspect-video rounded-lg" src={video.src} title={`Video ${index}`} allowFullScreen></iframe>
-                ) : (
-                  <video className="w-full aspect-video rounded-lg" src={video.src} controls></video>
-                )}
-              </div>
-            ))}
-          {projectData.images && projectData.images.length > 0 && <MyGallery galleryID="my-test-gallery" images={projectData.images} />}
         </div>
+        <div className="flex w-full flex-col md:flex-row justify-between">
+          {projectData.details.map((detail) => (
+            <ProjectInfo key={detail.id} data={detail} />
+          ))}
+        </div>
+        {projectData.videos &&
+          projectData.videos.length > 0 &&
+          projectData.videos.map((video, index) => (
+            <div key={video.id} className="w-full">
+              {video.src.startsWith('http') ? (
+                <iframe className="w-full aspect-video rounded-lg" src={video.src} title={`Video ${index}`} allowFullScreen></iframe>
+              ) : (
+                <video className="w-full aspect-video rounded-lg" src={video.src} controls></video>
+              )}
+            </div>
+          ))}
+        {projectData.images && projectData.images.length > 0 && (
+          <MyGallery galleryID="my-test-gallery" galleryType={projectData.galleryType} images={projectData.images} />
+        )}
       </div>
     </div>
   );

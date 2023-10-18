@@ -13,3 +13,24 @@
 h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.pattern {
+  background: radial-gradient(#E9D2F4 15%, transparent 16%), linear-gradient(45deg, transparent 49%, #E9D2F4 49% 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #E9D2F4 49% 51%, transparent 51%);
+  background-size: 1em 1em;
+  background-color: #EAEAE7;
+  opacity: 0.4;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #FF5733;
+  /* A different color border for emphasis */
+  background-color: #F8F8F8;
+  /* A subtle background color for contrast */
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 1.2em;
+  /* Larger font size for emphasis */
+  font-weight: bold;
+  /* Make the text bold for more attention */
+}

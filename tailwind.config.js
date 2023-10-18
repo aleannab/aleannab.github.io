@@ -7,6 +7,9 @@ export default {
         sans: ['Raleway', 'Roboto', 'sans'], // Replace 'Your-Font-Family' with your desired font 
         serif: ['Comfortaa', 'serif'], // Specify the font for headers
       },
+      aspectRatio: {
+        '3/1': '3 / 1',
+      }
     },
   },
   daisyui: {

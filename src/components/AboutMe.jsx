@@ -14,16 +14,16 @@ const AboutMe = (props) => {
       <div className="reveal-fade-about absolute flex w-full h-full justify-center items-center">
         <Decor left={leaf} right={circles} />
       </div>
-      <div className="flex flex-col relative justify-center items-center lg:flex-row-reverse px-[15%] max-w-7xl gap-5">
+      <div className="flex flex-col relative justify-center items-center lg:flex-row-reverse  w-full max-w-5xl px-10 gap-5">
         <img src={image} className="reveal-fade-about max-w-xs border-8 border-primary rounded-lg shadow-2xl" />
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-5">
           <h1 className="reveal-slide-about text-5xl text-center lg:text-left font-serif font-bold text-primary px-4">Hi, I'm Antoinette.</h1>
-          <div className="flex flex-col rounded-lg bg-base-100/50 px-4 py-3">
-            <p className="reveal-slide-about flex py-6 text-info">
+          <div className="flex flex-col rounded-lg bg-base-100/50 px-4 py-5">
+            <p className="reveal-slide-about flex text-info text-lg">
               I have six years of professional experience bringing concepts to reality in varying scales of interactive media, from intimate augmented
               reality storytelling on a phone screen to navigating collections of art projected on massive touch film walls.
             </p>
-            <p className="reveal-slide-about">
+            <p className="reveal-slide-about text-lg">
               Ultimately, I love combining my interests of art and technology to create beautiful captivating experiences that inspire curiosity, joy,
               movement, and play.
             </p>
