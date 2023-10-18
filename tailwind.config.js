@@ -8,7 +8,7 @@ export default {
         serif: ['Comfortaa', 'serif'], // Specify the font for headers
       },
       aspectRatio: {
-        '5/3': '5 / 3',
+        '3/1': '3 / 1',
       }
     },
   },

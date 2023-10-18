@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectInfo = ({ data }) => {
   return (
     <div className="flex flex-col">
-      <h1 className="italic text-primary">{data.label}</h1>
+      <h2 className="text-primary font-bold font-serif">{data.label}</h2>
       <ul>
         {data.content.map((item) => (
           <li key={item}>
