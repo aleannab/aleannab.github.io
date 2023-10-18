@@ -15,7 +15,7 @@ const ProjectList = () => {
       <div className="reveal-fade-project absolute flex w-full h-full justify-center items-center">
         <Decor left={squares} right={ladder} />
       </div>
-      <div className="reveal-slide-project flex flex-col items-center justify-center w-full max-w-7xl px-[15%]">
+      <div className="reveal-slide-project flex flex-col items-center justify-center w-full max-w-5xl px-10">
         <h1 className="text-6xl font-serif font-bold pb-10 text-primary text-shadow hidden-text">Projects</h1>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10">
           {projectData.map((project) => (
