@@ -14,6 +14,11 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+h2 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
 .pattern {
   background: radial-gradient(#E9D2F4 15%, transparent 16%), linear-gradient(45deg, transparent 49%, #E9D2F4 49% 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #E9D2F4 49% 51%, transparent 51%);
   background-size: 1em 1em;
