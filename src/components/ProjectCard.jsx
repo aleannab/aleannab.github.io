@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ data }) => {
   return (
-    <div className="w-full bg-primary border-8 border-primary rounded-lg shadow-xl z-20 ">
+    <div className="w-full bg-info border-2 border-info rounded-lg shadow-xl z-20 ">
       <div className="card w-full relative">
         <Link to={`/projects/${data.id}`} state={{ projectData: data }}>
           <div className="group bg-accent rounded-lg aspect-3/1">

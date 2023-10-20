@@ -17,7 +17,7 @@ const Hero = () => {
           <h2 className="font-sans text-2xl md:text-3xl drop-shadow-md">Creative Developer | Technology + Art</h2>
         </div>
         {/* <p className="reveal-fade-hero flex-none font-sans bg-accent text-lg rounded-lg px-2 font-thin">Artistic Byte-sized Concoctions</p> */}
-        <p className="bg-accent/80 text-lg rounded-lg p-2">still under construction... but feel free to poke around. :]</p>
+        <p className="bg-accent/80 text-lg rounded-full py-2 px-5">still under construction... but feel free to poke around. :]</p>
       </div>
     </div>
   );

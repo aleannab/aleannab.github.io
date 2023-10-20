@@ -23,9 +23,9 @@ const ProjectTemplate = () => {
     <div className="relative w-full flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute pattern w-full h-full z-[-30]" />
       <Navigation isMain={false} />
-      <div className="flex flex-col w-full max-w-5xl space-y-10 items-center justify-center py-[10%] px-10">
+      <div className="flex flex-col w-full max-w-5xl space-y-10 items-center justify-center py-24 px-10">
         <div className="flex flex-col lg:flex-row items-center justify-between items-start gap-10">
-          <img src={projectData.hero} className="max-w-xs border-8 border-primary rounded-lg shadow-2xl" />
+          <img src={projectData.hero} className="max-w-xs border-2 border-info rounded-lg shadow-2xl" />
           <div className="flex flex-col">
             <h1 className="text-4xl font-serif font-bold text-center lg:text-left text-primary">{projectData.name}</h1>
             <p className="py-6 text-lg text-left whitespace-pre-line">{projectData.description}</p>
