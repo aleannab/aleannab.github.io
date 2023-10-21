@@ -7,10 +7,10 @@ const projects = [
     hero2x: "/assets/em-ra-hero-2x.jpg",
     galleryType: "grid",
     images: [
-      { id: 0, src: "/assets/em-ra-00-1x.jpg", src2x: "/assets/em-ra-00-2x.jpg", src3x: "/assets/em-ra-00-3x.jpg", width: 2048, height: 1536 },
-      { id: 1, src: "/assets/em-ra-01-1x.jpg", src2x: "/assets/em-ra-01-2x.jpg", src3x: "/assets/em-ra-01-3x.jpg", width: 2048, height: 1152 },
-      { id: 2, src: "/assets/em-ra-02-1x.jpg", src2x: "/assets/em-ra-02-2x.jpg", src3x: "/assets/em-ra-02-3x.jpg", width: 2048, height: 1536 },
-      { id: 3, src: "/assets/em-ra-03-1x.jpg", src2x: "/assets/em-ra-03-2x.jpg", src3x: "/assets/em-ra-03-3x.jpg", width: 1940, height: 1940 },
+      { id: 0, src: "/assets/em-ra-00-1x.jpg", src2x: "/assets/em-ra-00-2x.jpg", src3x: "/assets/em-ra-00-3x.jpg", width: 2048, height: 1536, caption:"Mural at Facebook Washington HQ"},
+      { id: 1, src: "/assets/em-ra-01-1x.jpg", src2x: "/assets/em-ra-01-2x.jpg", src3x: "/assets/em-ra-01-3x.jpg", width: 2048, height: 1152, caption:"Farmhouse Exhibit at Bellevvue Arts Museum"},
+      { id: 2, src: "/assets/em-ra-02-1x.jpg", src2x: "/assets/em-ra-02-2x.jpg", src3x: "/assets/em-ra-02-3x.jpg", width: 2048, height: 1536, caption:"man and daughters holding up phone to view AR story" },
+      { id: 3, src: "/assets/em-ra-03-1x.jpg", src2x: "/assets/em-ra-03-2x.jpg", src3x: "/assets/em-ra-03-3x.jpg", width: 1940, height: 1940, caption:"Seed packet with QR code to AR experience" },
     ],
     videos: [
       { id: 4, src:"https://player.vimeo.com/video/702912105?h=bf4c10c68"}
@@ -32,12 +32,12 @@ const projects = [
     hero2x: "/assets/kits-hero-2x.jpg",
     galleryType: "phone",
     images: [
-      { id: 10, src: "/assets/kits-00.gif", width: 320, height: 692, caption: "Image 1" },
-      { id: 11, src: "/assets/kits-01.gif", width: 320, height: 692, caption: "Image 1" },
-      { id: 12, src: "/assets/kits-02.gif", width: 320, height: 692, caption: "Image 1" },
-      { id: 13, src: "/assets/kits-03.gif", width: 320, height: 692, caption: "Image 1" },
-      { id: 14, src: "/assets/kits-04.gif", width: 320, height: 692, caption: "Image 1" },
-      { id: 15, src: "/assets/kits-05.gif", width: 320, height: 692, caption: "Image 1" },
+      { id: 10, src: "/assets/kits-00.gif", width: 320, height: 692, caption: "AR fishing rod reeling in fish from puddle in the middle of a road" },
+      { id: 11, src: "/assets/kits-01.gif", width: 320, height: 692, caption: "Bigfoot and forest friends peeking out from around the corner" },
+      { id: 12, src: "/assets/kits-02.gif", width: 320, height: 692, caption: "AR treats (boba tea, cupcakes, candy, and ice cream) float upwards like bubbles then pop" },
+      { id: 13, src: "/assets/kits-03.gif", width: 320, height: 692, caption: "AR elephant cools down with a fan" },
+      { id: 14, src: "/assets/kits-04.gif", width: 320, height: 692, caption: "AR heart shaped fern leaves surrounding a real life plant" },
+      { id: 15, src: "/assets/kits-05.gif", width: 320, height: 692, caption: "AR snake plant comes to life" },
     ],
     description: "Kits is a curated collection of thematic 'stickers', consisting of a blend of 2D and 3D augmented reality elements. These stickers were designed for users to embellish their surroundings with imaginative creations.\n\nThese enchanting digital assets added a new dimension to the way users interacted with their surroundings, infusing the ordinary with a touch of the extraordinary and delight.\n\nThis was a fast paced and highly collaborative project. I further brought the stickers to life by creating various physical simulations and procedural animations/shaders.",
     details: [
@@ -61,10 +61,10 @@ const projects = [
       { id: 21, src:"/assets/lum-02.mp4"},
     ],
     images: [
-      { id: 22, src:"/assets/lum-03-1x.jpg", src2x: "/assets/lum-03-2x.jpg", src3x: "/assets/lum-03-4x.jpg", width: 4032, height: 3024},
-      { id: 23, src:"/assets/lum-04-1x.jpg", src2x: "/assets/lum-04-2x.jpg", src3x: "/assets/lum-04-2x.jpg", width: 768, height: 1024},
-      { id: 24, src:"/assets/lum-05-1x.jpg", src2x: "/assets/lum-05-2x.jpg", src3x: "/assets/lum-05-4x.jpg", width: 3024, height: 4032},
-      { id: 25, src:"/assets/lum-06-1x.jpg", src2x: "/assets/lum-06-2x.jpg", src3x: "/assets/lum-06-4x.jpg", width: 4032, height: 3024},
+      { id: 22, src:"/assets/lum-03-1x.jpg", src2x: "/assets/lum-03-2x.jpg", src3x: "/assets/lum-03-4x.jpg", width: 4032, height: 3024, caption:"Inside the Luminary, students walk around art exhibit featuring eyes of various paintings"},
+      { id: 23, src:"/assets/lum-04-1x.jpg", src2x: "/assets/lum-04-2x.jpg", src3x: "/assets/lum-04-2x.jpg", width: 768, height: 1024, caption:"Students browse the Luminary panels to discover art around the world"},
+      { id: 24, src:"/assets/lum-05-1x.jpg", src2x: "/assets/lum-05-2x.jpg", src3x: "/assets/lum-05-4x.jpg", width: 3024, height: 4032, caption:"Group of people watch lecture given within the Luminary"},
+      { id: 25, src:"/assets/lum-06-1x.jpg", src2x: "/assets/lum-06-2x.jpg", src3x: "/assets/lum-06-4x.jpg", width: 4032, height: 3024, caption:"Students combine two portraits into one using neighboring panels"},
     ],
     description: "The Stein Luminary is an interactive digital art museum. It was created for the Boise State community to explore creative arts, humanities, technology, and science from around the globe. The space also encourages interdisciplinary collaboration and research-based innovation by featuring exhibitions, performances, and emerging media installations from the community. The Stein Luminary not only showcased art but also embodied the harmonious blend of technology, creativity, and intellectual curiosity.\n\nAs the lead developer on this project, I was responsible for the laying the groundwork for application framework. I collaborated closely with the designer on the UX flows and motion. Our collaboration thrived in an iterative process that enabled the evolution of our project, mirroring the spirit of innovation celebrated within our museum.",
     details: [

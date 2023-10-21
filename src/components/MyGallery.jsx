@@ -34,7 +34,7 @@ const MyGallery = (props) => {
                 <div className="camera"></div>
                 <div className="display">
                   <div className="artboard artboard-demo">
-                    <img src={image.src} />
+                    <img src={image.src} alt={image.caption} />
                   </div>
                 </div>
               </div>

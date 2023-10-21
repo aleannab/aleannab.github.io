@@ -5,7 +5,7 @@ import illustration from '../assets/temp/character-illustration.svg';
 const Footer = () => {
   return (
     <div className="flex flex-col w-full justify-center items-center">
-      <img src={illustration} className="max-w-xs translate-y-6 drop-shadow-xl" />
+      <img src={illustration} className="max-w-xs translate-y-6 drop-shadow-xl" alt="" />
       <footer className="flex flex-col footer footer-center p-10 text-primary-content bg-primary ">
         <aside>
           <img src={logo} width="50" height="50" />

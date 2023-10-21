@@ -29,6 +29,7 @@ const ProjectTemplate = () => {
             src={projectData.hero}
             srcSet={`${projectData.hero2x} 2x, ${projectData.hero} 1x`}
             className="max-w-xs border-2 border-info rounded-lg shadow-2xl"
+            alt={`${projectData.name} hero image`}
           />
           <div className="flex flex-col">
             <h1 className="text-4xl font-serif font-bold text-center lg:text-left text-primary">{projectData.name}</h1>

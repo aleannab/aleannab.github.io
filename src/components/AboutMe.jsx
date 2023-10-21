@@ -20,6 +20,7 @@ const AboutMe = (props) => {
           srcSet={`${portrait2x} 2x, ${portrait1x} 1x`}
           src={portrait1x}
           className="reveal-fade-about max-w-xs border-2 border-info rounded-lg shadow-lg"
+          alt="Antoinette's portrait"
         />
         <div className="flex flex-col gap-5">
           <h1 className="reveal-slide-about text-5xl text-center lg:text-left font-serif font-bold text-primary px-4">Hi, I'm Antoinette.</h1>
