@@ -2,14 +2,15 @@ const projects = [
   {
     id: 1,
     name: "Emerging Radiance",
-    thumb: "",
-    hero: "/assets/em-ra-hero.jpg",
+    square: "/assets/em-ra-square.jpg",
+    hero: "/assets/em-ra-hero-1x.jpg",
+    hero2x: "/assets/em-ra-hero-2x.jpg",
     galleryType: "grid",
     images: [
-      { id: 0, src: "/assets/em-ra-00.jpg", width: 2048, height: 1536, caption: "Image 1" },
-      { id: 1, src: "/assets/em-ra-01.jpg", width: 2048, height: 1152, caption: "Image 1" },
-      { id: 2, src: "/assets/em-ra-02.jpg", width: 2048, height: 1536, caption: "Image 1" },
-      { id: 3, src: "/assets/em-ra-03.jpg", width: 1940, height: 1940, caption: "Image 1" },
+      { id: 0, src: "/assets/em-ra-00-1x.jpg", src2x: "/assets/em-ra-00-2x.jpg", src3x: "/assets/em-ra-00-3x.jpg", width: 2048, height: 1536 },
+      { id: 1, src: "/assets/em-ra-01-1x.jpg", src2x: "/assets/em-ra-01-2x.jpg", src3x: "/assets/em-ra-01-3x.jpg", width: 2048, height: 1152 },
+      { id: 2, src: "/assets/em-ra-02-1x.jpg", src2x: "/assets/em-ra-02-2x.jpg", src3x: "/assets/em-ra-02-3x.jpg", width: 2048, height: 1536 },
+      { id: 3, src: "/assets/em-ra-03-1x.jpg", src2x: "/assets/em-ra-03-2x.jpg", src3x: "/assets/em-ra-03-3x.jpg", width: 1940, height: 1940 },
     ],
     videos: [
       { id: 4, src:"https://player.vimeo.com/video/702912105?h=bf4c10c68"}
@@ -26,8 +27,9 @@ const projects = [
   {
     id: 2,
     name: "Kits",
-    thumb: "",
-    hero: "/assets/kits-hero.jpg",
+    square: "/assets/kits-square.jpg",
+    hero: "/assets/kits-hero-1x.jpg",
+    hero2x: "/assets/kits-hero-2x.jpg",
     galleryType: "phone",
     images: [
       { id: 10, src: "/assets/kits-00.gif", width: 320, height: 692, caption: "Image 1" },
@@ -49,8 +51,9 @@ const projects = [
   {
     id: 3,
     name: "The Stein Luminary",
-    thumb: "",
-    hero: "/assets/lum-hero.jpg",
+    square: "/assets/lum-square.jpg",
+    hero: "/assets/lum-hero-1x.jpg",
+    hero2x: "/assets/lum-hero-2x.jpg",
     galleryType: "grid",
     videos: [
       { id: 19, src:"/assets/lum-00.mp4"},
@@ -58,10 +61,10 @@ const projects = [
       { id: 21, src:"/assets/lum-02.mp4"},
     ],
     images: [
-      { id: 22, src:"/assets/lum-03.jpg"},
-      { id: 23, src:"/assets/lum-04.jpg"},
-      { id: 24, src:"/assets/lum-05.jpg"},
-      { id: 25, src:"/assets/lum-06.jpg"},
+      { id: 22, src:"/assets/lum-03-1x.jpg", src2x: "/assets/lum-03-2x.jpg", src3x: "/assets/lum-03-4x.jpg", width: 4032, height: 3024},
+      { id: 23, src:"/assets/lum-04-1x.jpg", src2x: "/assets/lum-04-2x.jpg", src3x: "/assets/lum-04-2x.jpg", width: 768, height: 1024},
+      { id: 24, src:"/assets/lum-05-1x.jpg", src2x: "/assets/lum-05-2x.jpg", src3x: "/assets/lum-05-4x.jpg", width: 3024, height: 4032},
+      { id: 25, src:"/assets/lum-06-1x.jpg", src2x: "/assets/lum-06-2x.jpg", src3x: "/assets/lum-06-4x.jpg", width: 4032, height: 3024},
     ],
     description: "The Stein Luminary is an interactive digital art museum. It was created for the Boise State community to explore creative arts, humanities, technology, and science from around the globe. The space also encourages interdisciplinary collaboration and research-based innovation by featuring exhibitions, performances, and emerging media installations from the community. The Stein Luminary not only showcased art but also embodied the harmonious blend of technology, creativity, and intellectual curiosity.\n\nAs the lead developer on this project, I was responsible for the laying the groundwork for application framework. I collaborated closely with the designer on the UX flows and motion. Our collaboration thrived in an iterative process that enabled the evolution of our project, mirroring the spirit of innovation celebrated within our museum.",
     details: [
@@ -75,8 +78,9 @@ const projects = [
   {
     id: 4,
     name: "The Landing",
-    thumb: "",
-    hero: "/assets/vf-la-hero.jpg",
+    square: "/assets/vf-la-square.jpg",
+    hero: "/assets/vf-la-hero-1x.jpg",
+    hero2x: "/assets/vf-la-hero-2x.jpg",
     galleryType: "grid",
     videos: [
       { id: 31, src:"/assets/vf-la-00.mp4"},

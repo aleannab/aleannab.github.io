@@ -25,7 +25,11 @@ const ProjectTemplate = () => {
       <Navigation isMain={false} />
       <div className="flex flex-col w-full max-w-5xl space-y-10 items-center justify-center py-24 px-10">
         <div className="flex flex-col lg:flex-row items-center justify-between items-start gap-10">
-          <img src={projectData.hero} className="max-w-xs border-2 border-info rounded-lg shadow-2xl" />
+          <img
+            src={projectData.hero}
+            srcSet={`${projectData.hero2x} 2x, ${projectData.hero} 1x`}
+            className="max-w-xs border-2 border-info rounded-lg shadow-2xl"
+          />
           <div className="flex flex-col">
             <h1 className="text-4xl font-serif font-bold text-center lg:text-left text-primary">{projectData.name}</h1>
             <p className="py-6 text-lg text-left whitespace-pre-line">{projectData.description}</p>

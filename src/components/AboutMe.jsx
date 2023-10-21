@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
-import image from '../assets/temp.jpg';
+import portrait1x from '../assets/portrait_1x.jpg';
+import portrait2x from '../assets/portrait_2x.jpg';
 import circles from '../assets/temp/decor-circles.svg';
 import leaf from '../assets/temp/leaf.svg';
 import Decor from './Decor';
@@ -15,7 +16,11 @@ const AboutMe = (props) => {
         <Decor left={leaf} right={circles} />
       </div>
       <div className="flex flex-col relative justify-center items-center lg:flex-row-reverse  w-full max-w-5xl px-10 gap-5">
-        <img src={image} className="reveal-fade-about max-w-xs border-2 border-info rounded-lg shadow-lg" />
+        <img
+          srcSet={`${portrait2x} 2x, ${portrait1x} 1x`}
+          src={portrait1x}
+          className="reveal-fade-about max-w-xs border-2 border-info rounded-lg shadow-lg"
+        />
         <div className="flex flex-col gap-5">
           <h1 className="reveal-slide-about text-5xl text-center lg:text-left font-serif font-bold text-primary px-4">Hi, I'm Antoinette.</h1>
           <div className="flex flex-col rounded-lg bg-base-100/30 px-4 py-5 gap-5 text-lg text-info">
