@@ -75,7 +75,7 @@ const Navigation = ({ isMain = true }) => {
     <div className="max-w-6xl w-full flex flex-col top-0 z-10 justify-center items-center fixed">
       <ul className="menu w-auto ml-auto">
         <li>
-          <button className="w-auto h-auto relative" onClick={() => toggleMenu()}>
+          <button aria-label="toggle menu open/close" className="w-auto h-auto relative" onClick={() => toggleMenu()}>
             {isMain && (
               <svg
                 className="menu-open w-6 h-6 absolute"
@@ -103,7 +103,7 @@ const Navigation = ({ isMain = true }) => {
         {isMain && (
           <div className="menu-content">
             <li>
-              <button onClick={() => scrollToSection('home')} disabled={!isMenuOpen}>
+              <button aria-label="scroll to home" onClick={() => scrollToSection('home')} disabled={!isMenuOpen}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path
                     strokeLinecap="round"
@@ -114,7 +114,7 @@ const Navigation = ({ isMain = true }) => {
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('aboutme')} disabled={!isMenuOpen}>
+              <button aria-label="scroll to about me" onClick={() => scrollToSection('aboutme')} disabled={!isMenuOpen}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path
                     strokeLinecap="round"
@@ -125,7 +125,7 @@ const Navigation = ({ isMain = true }) => {
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('projects')} disabled={!isMenuOpen}>
+              <button aria-label="scroll to projects" onClick={() => scrollToSection('projects')} disabled={!isMenuOpen}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path
                     strokeLinecap="round"
