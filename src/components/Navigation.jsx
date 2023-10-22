@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import anime from 'animejs/lib/anime.es.js';
 import '../styles/main.css';
 
 const Navigation = ({ isMain = true }) => {
@@ -18,28 +17,6 @@ const Navigation = ({ isMain = true }) => {
     } else {
       scrollToSection('projects');
     }
-  };
-
-  const animateMenuItems = (closedItems, openItems) => {
-    anime({
-      targets: closedItems,
-      opacity: '0',
-      duration: 3000,
-    });
-
-    anime({
-      targets: openItems,
-      opacity: '1',
-      duration: 3000,
-    });
-  };
-
-  const closeMenu = () => {
-    animateMenuItems(['.menu-content'], ['.menu-open']);
-  };
-
-  const openMenu = () => {
-    animateMenuItems(['.menu-open'], ['.menu-content']);
   };
 
   // Scroll to Section Behavior

@@ -15,7 +15,7 @@
     "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
-    "animejs": "^3.2.1",
+    "@react-spring/web": "^9.7.3",
     "cssnano": "^6.0.1",
     "daisyui": "^3.6.4",
     "photoswipe": "^5.4.0",

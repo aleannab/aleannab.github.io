@@ -4,14 +4,10 @@ import portrait2x from '../assets/portrait_2x.jpg';
 import circles from '../assets/temp/decor-circles.svg';
 import leaf from '../assets/temp/leaf.svg';
 import Decor from './Decor';
-import useRevealAnimation from './useRevealAnimation';
 
 const AboutMe = (props) => {
-  const ref = useRef();
-  useRevealAnimation(ref, 'about');
-
   return (
-    <div ref={ref} id="aboutme" className="aboutme about-container min-h-screen relative flex flex-col w-full justify-center items-center">
+    <div id="aboutme" className="aboutme about-container min-h-screen relative flex flex-col w-full justify-center items-center">
       <div className="reveal-fade-about absolute flex w-full h-full justify-center items-center">
         <Decor left={leaf} right={circles} />
       </div>
