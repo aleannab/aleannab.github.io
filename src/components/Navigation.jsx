@@ -72,7 +72,7 @@ const Navigation = ({ isMain = true }) => {
   }
 
   return (
-    <div className="max-w-6xl w-full flex flex-col top-0 z-10 justify-center items-center fixed">
+    <div className="z-10 fixed">
       <ul className="menu w-auto ml-auto">
         <li>
           <button aria-label="toggle menu open/close" className="w-auto h-auto relative" onClick={() => toggleMenu()}>
