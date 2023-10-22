@@ -25,8 +25,8 @@ const ProjectTemplate = () => {
       <div className="w-full flex flex-row-reverse max-w-6xl ">
         <Navigation isMain={false} />
       </div>
-      <div className="flex flex-col w-full max-w-5xl space-y-10 items-center justify-center py-24 px-10 bg-accent">
-        <div className="flex flex-col w-full lg:flex-row items-center justify-between items-start gap-10 bg-primary">
+      <div className="flex flex-col w-full max-w-5xl space-y-10 items-center justify-center py-24 px-10">
+        <div className="flex flex-col w-full lg:flex-row items-center justify-between items-start gap-10">
           <img
             src={projectData.hero}
             srcSet={`${projectData.hero2x} 2x, ${projectData.hero} 1x`}
@@ -38,7 +38,7 @@ const ProjectTemplate = () => {
             <p className="py-6 text-lg text-left whitespace-pre-line">{projectData.description}</p>
           </div>
         </div>
-        <div className="flex w-full flex-col md:flex-row justify-between gap-5 bg-secondary">
+        <div className="flex w-full flex-col md:flex-row justify-between gap-5">
           {projectData.details.map((detail) => (
             <ProjectInfo key={detail.id} data={detail} />
           ))}
