@@ -87,7 +87,7 @@ const projects = [
       { id: 32, src:"/assets/vf-la-01.mp4"},
       { id: 33, src:"/assets/vf-la-02.mp4"},
     ],
-    description: "The Landing is an interactive floor that redefines the way people engage with their environment. This was created for the headquarters of VF Corporation. The floor was brought to life through a symphony of modes that transitioned with each season. The modes were designed to evoke a unique and captivating experience inspired by the active season.\n\n This was a huge collaborative effort with designers to determine the look and feel of the each mode. This particular project was also heavy on the creative code side, allowing me to create various particle systems and procedural shaders to help transform the ordinary floor into a canvas of digital wonder.",
+    description: "The Landing is an interactive floor that redefines the way people engage with their environment. This was created for the headquarters of VF Corporation. The floor was brought to life through a symphony of modes that transitioned with each season. The modes were designed to evoke a unique and captivating experience inspired by the active season. The visuals would respond to the footsteps of people walking across the floor.\n\n This was a huge collaborative effort with designers to determine the look and feel of the each mode. This particular project was also heavy on the creative code side, allowing me to create various particle systems and procedural shaders to help transform the ordinary floor into a canvas of digital wonder.",
     details: [
       { id: 34, label: "Company", content: ["Downstream"], link: "https://www.downstream.com/" },
       { id: 35, label: "Role", content: ["Lead Developer"]},
