@@ -6,8 +6,8 @@ import FadeInOnScroll from './FadeInOnScroll';
 const Hero = () => {
   return (
     <div id="home" className="hero relative min-h-screen overflow-y-visible">
-      <img src={left} className="absolute top-0 left-0 min-h-full object-cover z-[-20] max-w-2xl" alt="" />
-      <img src={right} className="absolute top-0 right-0 min-h-full object-cover z-[-30] max-w-2xl" alt="" />
+      {/* <img src={left} className="absolute top-0 left-0 min-h-full object-cover z-[-20] max-w-2xl" alt="" />
+      <img src={right} className="absolute top-0 right-0 min-h-full object-cover z-[-30] max-w-2xl" alt="" /> */}
       <FadeInOnScroll>
         <div className="hero-content flex flex-col relative text-center gap-10">
           <div className="flex flex-col max-w-6xl reveal-slide-hero gap-2 rounded-lg bg-accent/80 lg:bg-transparent p-10">

@@ -1,4 +1,4 @@
-import Navigation from './Navigation';
+// import Navigation from './Navigation';
 import Hero from './Hero';
 import AboutMe from './AboutMe';
 import ProjectList from './ProjectList';
@@ -8,9 +8,9 @@ const App = () => {
   return (
     <div className="w-full flex flex-col relative items-center justify-center overflow-hidden">
       <div className="absolute pattern w-full h-full z-[-30]" />
-      <div className="w-full flex flex-row-reverse max-w-6xl ">
+      {/* <div className="w-full flex flex-row-reverse max-w-6xl ">
         <Navigation />
-      </div>
+      </div> */}
       <Hero />
       <AboutMe />
       <ProjectList />
