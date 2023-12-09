@@ -1,13 +1,11 @@
 import React, { useRef } from 'react';
-import left from '../assets/temp/abstract-left.svg';
-import right from '../assets/temp/abstract-right.svg';
 import FadeInOnScroll from './FadeInOnScroll';
+import BgSketch from './BgSketch';
 
 const Hero = () => {
   return (
     <div id="home" className="hero relative min-h-screen overflow-y-visible">
-      {/* <img src={left} className="absolute top-0 left-0 min-h-full object-cover z-[-20] max-w-2xl" alt="" />
-      <img src={right} className="absolute top-0 right-0 min-h-full object-cover z-[-30] max-w-2xl" alt="" /> */}
+      <BgSketch className="absolute flex w-full h-full justify-center items-center"></BgSketch>
       <FadeInOnScroll>
         <div className="hero-content flex flex-col relative text-center gap-10">
           <div className="flex flex-col max-w-6xl reveal-slide-hero gap-2 rounded-lg bg-accent/80 lg:bg-transparent p-10">

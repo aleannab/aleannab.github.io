@@ -15,6 +15,7 @@
     "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
+    "@p5-wrapper/react": "^4.3.2",
     "@react-spring/parallax": "^9.7.3",
     "@react-spring/web": "^9.7.3",
     "cssnano": "^6.0.1",
