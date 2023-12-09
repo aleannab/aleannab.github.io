@@ -19,18 +19,19 @@ let ampMax = 0.5;
 let pLength;
 let colorPalette = ['#0096cc'];
 let hueVal;
-/*
-          "secondary": "#0096cc",
-          "accent": "#E9D2F4",
-          "accent-focus": "#F5DD90",
-          "success": "#587e4c",
-          "warning": "#d56e14",
-          "error": "#f44336"
-          */
 
 let canvas;
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  initSketch();
+}
+
 function setup() {
+  initSketch();
+}
+
+function initSketch() {
   let length = windowWidth > windowHeight ? windowWidth : windowHeight;
   canvas = createCanvas(windowWidth, length);
   canvas.position(0, 0);
@@ -44,8 +45,15 @@ function setup() {
   let delta = 0.3 * inc;
 
   pLength = 0.3 * (windowWidth < windowHeight ? windowWidth : windowHeight);
-  hueVal = hue(random(colorPalette));
+  sDotMin = 0.01 * length;
+  sDotMax = 0.03 * length;
+  sCircleMin = 0.05 * length;
+  sCircleMax = 0.2 * length;
+  sVarMin = 0.005 * length;
+  sVarMax = 0.02 * length;
 
+  dots = [];
+  hueVal = hue(random(colorPalette));
   for (let i = 0; i < numDots; i++) {
     let theta = i * inc + random(-delta, delta);
     let x = windowWidth * (0.3 * cos(theta) + 0.5);
