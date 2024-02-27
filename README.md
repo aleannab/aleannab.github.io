@@ -1,8 +1,38 @@
-# React + Vite
+### Description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple portfolio template for developer/designers built with React. 
 
-Currently, two official plugins are available:
+### [live preview](https://ubaimutl.github.io/react-portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
+
+### Features
+
+- Fully Responsive
+- Multi-Page Layout
+- Contact Form With EmailJs
+- React-Bootstrap
+- Edit Content From One Place
+
+### Setup
+
+Get the code
+
+<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
+ 
+Install required dependencies
+
+<pre>yarn install</pre>
+
+
+Start the server
+
+<pre>yarn start</pre>
+
+### More
+
+Modify pages content in  `src/content_option.js`.
+
+### Thanks
+
+If you like this portfolio template don't forget give it a ⭐ 
