@@ -97,29 +97,30 @@ const services = [
 
 const dataportfolio = [
   {
+    id: '0',
     img: '/assets/em-ra-hero-1x.jpg',
-    description: 'Emerging Radiance.',
-    link: '#',
+    name: 'Emerging Radiance',
   },
   {
+    id: '1',
     img: '/assets/kits-hero-1x.jpg',
-    description: 'Kits.',
-    link: '#',
+    name: 'Kits',
   },
   {
+    id: '2',
     img: '/assets/lum-hero-1x.jpg',
-    description: 'The Stein Luminary.',
-    link: '#',
+    name: 'The Stein Luminary',
   },
   {
+    id: '3',
     img: '/assets/vf-la-square.jpg',
-    description: 'The Landing.',
-    link: '#',
+    name: '/project/vf-landing',
   },
   {
+    id: '4',
     img: '/assets/prickly-blooms.png',
-    description: 'Creative Code Sketchbook.',
-    link: 'https://openprocessing.org/user/411850/?o=11&view=sketches',
+    name: 'Creative Code Sketchbook.',
+    externalLink: 'https://openprocessing.org/user/411850/?o=11&view=sketches',
   },
 ];
 
