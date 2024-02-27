@@ -23,7 +23,7 @@ export const Portfolio = () => {
             data.externalLink ? (
               <a href={`${data.externalLink}`} target="_blank">
                 <div className="po_item">
-                  <img src={data.img} alt="" />
+                  <img src={data.hero} alt="" />
                   <div className="content">
                     <p>{data.name}</p>
                   </div>
@@ -32,7 +32,7 @@ export const Portfolio = () => {
             ) : (
               <Link key={data.id} to={`/projects/${data.id}`} state={{ projectData: data }} className="my-3">
                 <div className="po_item">
-                  <img src={data.img} alt="" />
+                  <img src={data.hero} alt="" />
                   <div className="content">
                     <p>{data.name}</p>
                   </div>
