@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import MyGallery from './gallery';
 import './style.css';
 import { useParams } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -49,6 +50,33 @@ export const Project = ({}) => {
             </div>
           </Col>
         </Row>
+        <Row>
+          <div className="d-flex flex-column w-100 flex-md-row justify-content-between gap-5">
+            {projectData.details.map((detail) => (
+              <div className="d-flex flex-column">
+                <h3 className="text-primary font-weight-bold text-uppercase small">{detail.label}</h3>
+                <ul className="list-unstyled">
+                  {detail.content.map((item, index) => (
+                    <li key={index}>
+                      {detail.link ? (
+                        <a
+                          href={detail.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-decoration-none font-weight-bold text-secondary"
+                        >
+                          {item}
+                        </a>
+                      ) : (
+                        item
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </Row>
         <Row className="sec_sp">
           {projectData.videos &&
             projectData.videos.length > 0 &&
@@ -61,6 +89,11 @@ export const Project = ({}) => {
                 )}
               </div>
             ))}
+        </Row>
+        <Row className="sec_sp">
+          {projectData.images && projectData.images.length > 0 && (
+            <MyGallery galleryID="my-test-gallery" galleryType={projectData.galleryType} images={projectData.images} />
+          )}
         </Row>
       </Container>
     </HelmetProvider>

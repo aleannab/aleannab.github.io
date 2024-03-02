@@ -269,7 +269,7 @@ const dataportfolio = [
     id: 5,
     hero: '/assets/prickly-blooms.png',
     name: 'Creative Code Sketchbook.',
-    externalLink: 'https://openprocessing.org/user/411850/?o=11&view=sketches',
+    externalLink: 'https://www.instagram.com/antoinette.creates',
   },
 ];
 
