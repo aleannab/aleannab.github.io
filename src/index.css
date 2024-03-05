@@ -4,7 +4,7 @@
   --secondary-color: #fff;
   --text-color: #fff;
   --text-color-2: #fff;
-  --text-color-3: rgb(204, 0, 0);
+  --text-color-3: #c04e82;
   --overlay-color: rgb(12 12 12 / 63%);
 }
 
@@ -48,17 +48,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Marcellus;
+  font-family: Comfortaa;
 }
 
-a,
+a {
+  color: var(--text-color-3);
+}
+
 a:hover {
   color: var(--text-color);
 }
 
 p {
   word-break: break-word;
-  hyphens: auto;
 }
 
 .ovhidden {
@@ -93,4 +95,8 @@ code {
 
 .color_sec {
   color: var(--secondary-color);
+}
+
+.color_accent {
+  color: var(--text-color-3);
 }

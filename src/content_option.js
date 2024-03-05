@@ -8,10 +8,9 @@ const meta = {
 };
 
 const introdata = {
-  title: "Hi! I'm Antoinette.",
-  animated: {
-    first: "I'm a creative developer.",
-  },
+  intro: 'Hello! My name is',
+  title: 'Antoinette\nBumatay-Chan.',
+  tagline: "I'm a Creative Developer.\n\nI create beautiful and playful experiences with technology.\n",
   description:
     'I have eight years of professional experience bringing concepts to reality in varying scales of interactive media, from intimate augmented reality storytelling on a phone screen to navigating collections of art projected on massive touch film walls.\n\n Ultimately, I love combining my interests of art and technology to create beautiful captivating experiences that inspire curiosity, joy, movement, and play.',
   your_img_url: '/assets/prickly-blooms.png',
@@ -276,7 +275,7 @@ const dataportfolio = [
 const contactConfig = {
   YOUR_EMAIL: 'ant.bchan@gmail.com',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ',
+    "I am currently looking for full-time and freelance opportunities.\nIf you'd like to collaborate on something or just want to chat, I'd love to hear from you!",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
   YOUR_SERVICE_ID: 'service_id',

@@ -51,20 +51,15 @@ export const Project = ({}) => {
           </Col>
         </Row>
         <Row>
-          <div className="d-flex flex-column w-100 flex-md-row justify-content-between gap-5">
+          <div className="details d-flex flex-column w-100 flex-md-row justify-content-between gap-5">
             {projectData.details.map((detail) => (
-              <div className="d-flex flex-column">
-                <h3 className="text-primary font-weight-bold text-uppercase small">{detail.label}</h3>
+              <div className="text d-flex flex-column">
+                <h3>{detail.label}</h3>
                 <ul className="list-unstyled">
                   {detail.content.map((item, index) => (
                     <li key={index}>
                       {detail.link ? (
-                        <a
-                          href={detail.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-decoration-none font-weight-bold text-secondary"
-                        >
+                        <a href={detail.link} target="_blank" rel="noopener noreferrer" className="text-decoration-none font-weight-bold">
                           {item}
                         </a>
                       ) : (
