@@ -278,9 +278,9 @@ const contactConfig = {
     "I am currently looking for full-time and freelance opportunities.\nIf you'd like to collaborate on something or just want to chat, I'd love to hear from you!",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: 'service_id',
-  YOUR_TEMPLATE_ID: 'template_id',
-  YOUR_USER_ID: 'user_id',
+  YOUR_SERVICE_ID: 'service_vkrdjzh',
+  YOUR_TEMPLATE_ID: 'template_azh8rlj',
+  YOUR_USER_ID: 'sgThMCdVmhdvZkTsk',
 };
 
 const socialprofils = {
