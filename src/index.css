@@ -5,6 +5,7 @@
   --text-color: #fff;
   --text-color-2: #fff;
   --text-color-3: #c04e82;
+  --transp-accent: #c04e814b;
   --overlay-color: rgb(12 12 12 / 63%);
 }
 
@@ -15,6 +16,7 @@
   --text-color: #000;
   --text-color-2: #000;
   --text-color-3: #016d6f;
+  --transp-accent: #016d6f4b;
   --overlay-color: rgb(255 255 255 / 70%);
 }
 
@@ -60,7 +62,9 @@ a:hover {
 }
 
 p {
+  font-family: 'Raleway', sans-serif;
   word-break: break-word;
+  font-size: 20px;
 }
 
 .ovhidden {
@@ -85,8 +89,7 @@ code {
 }
 
 .cursor__dot div:first-child {
-  filter: invert(1);
-  background-color: var(--overlay-color) !important;
+  background-color: var(--transp-accent) !important;
 }
 
 .color_pr {
