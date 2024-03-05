@@ -20,7 +20,7 @@ export const Home = () => {
             <div className="align-self-center ">
               <div className="intro mx-auto">
                 <h3 className="mb-1x">{introdata.intro}</h3>
-                <h1 className="mb-1x highlight accent_text">
+                <h1 className="mb-1x highlight color_accent">
                   <TextWithLineBreaks text={introdata.title} />
                 </h1>
                 <h3 className="fluidz-48 mb-1x">

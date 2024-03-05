@@ -50,7 +50,7 @@ export const Project = ({}) => {
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row className="sec_sp">
           <div className="details d-flex flex-column w-100 flex-md-row justify-content-between gap-5">
             {projectData.details.map((detail) => (
               <div className="text d-flex flex-column">
