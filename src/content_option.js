@@ -11,13 +11,11 @@ const introdata = {
   intro: 'Hello! My name is',
   title: 'Antoinette\nBumatay-Chan.',
   tagline: "I'm a Creative Developer.\n\nI create beautiful and playful experiences with technology.\n",
-  description:
-    'I have eight years of professional experience bringing concepts to reality in varying scales of interactive media, from intimate augmented reality storytelling on a phone screen to navigating collections of art projected on massive touch film walls.\n\n Ultimately, I love combining my interests of art and technology to create beautiful captivating experiences that inspire curiosity, joy, movement, and play.',
   your_img_url: '/assets/prickly-blooms.png',
 };
 
 const dataabout = {
-  title: "Hi! I'm Antoinette",
+  img: '/assets/profile.jpg',
   aboutme:
     "Hello! I am Antoinette Bumatay-Chan, a Portland-based creative developer passionate about infusing technology with beauty and meaning. With a background in Mechanical Engineering, I later pursued a Master's in Visualization at Texas A&M, where I fell in love with generative art and interactive technology.\n\nThroughout my career, I've had the privilege of working with diverse teams on a variety of projects, from intimate augmented reality storytelling to large-scale interactive art installations. My creative process often begins with a prompt, guiding me to explore the possibilities of movement and interaction. Iteration is key, as I trust my instincts to lead me down unexpected paths, resulting in experiences that bring joy and beauty to audiences. Beyond aesthetics, I aspire to use my work to raise awareness and start conversations about issues close to my heart, fostering empathy and understanding.\n\nOutside of work, I am a mother of a wonderful 2-year-old toddler and 12-year-old cat, avid reader, nature enthusiast, casual crafter, and aspiring ukulelist.\n\nThanks for peeking into my life. Let's create something extraordinary together!",
 };
