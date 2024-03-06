@@ -3,6 +3,7 @@ import './style.css';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Container, Row, Col } from 'react-bootstrap';
 import { dataabout, meta, worktimeline, skills, services } from '../../content_option';
+import TextWithLineBreaks from '../../components/textWithLineBreaks';
 
 export const About = () => {
   return (
@@ -24,9 +25,9 @@ export const About = () => {
             <h3 className="color_sec">{dataabout.title}</h3>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <div>
-              <p>{dataabout.aboutme}</p>
-            </div>
+            <p>
+              <TextWithLineBreaks text={dataabout.aboutme} />
+            </p>
           </Col>
         </Row>
         <Row className=" sec_sp">

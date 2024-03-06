@@ -1,20 +1,21 @@
-import React, { useState } from "react";
-import * as emailjs from "emailjs-com";
-import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { meta } from "../../content_option";
-import { Container, Row, Col, Alert } from "react-bootstrap";
-import { contactConfig } from "../../content_option";
+import React, { useState } from 'react';
+import * as emailjs from 'emailjs-com';
+import './style.css';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { meta } from '../../content_option';
+import { Container, Row, Col, Alert } from 'react-bootstrap';
+import { contactConfig } from '../../content_option';
+import { FaStar, FaEnvelope, FaMapPin } from 'react-icons/fa';
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
-    email: "",
-    name: "",
-    message: "",
+    email: '',
+    name: '',
+    message: '',
     loading: false,
     show: false,
-    alertmessage: "",
-    variant: "",
+    alertmessage: '',
+    variant: '',
   });
 
   const handleSubmit = (e) => {
@@ -28,33 +29,26 @@ export const ContactUs = () => {
       message: formData.message,
     };
 
-    emailjs
-      .send(
-        contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
-        contactConfig.YOUR_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormdata({
-            loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
-            variant: "success",
-            show: true,
-          });
-        },
-        (error) => {
-          console.log(error.text);
-          setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
-            variant: "danger",
-            show: true,
-          });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
-        }
-      );
+    emailjs.send(contactConfig.YOUR_SERVICE_ID, contactConfig.YOUR_TEMPLATE_ID, templateParams, contactConfig.YOUR_USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        setFormdata({
+          loading: false,
+          alertmessage: 'SUCCESS! ,Thankyou for your messege',
+          variant: 'success',
+          show: true,
+        });
+      },
+      (error) => {
+        console.log(error.text);
+        setFormdata({
+          alertmessage: `Faild to send!,${error.text}`,
+          variant: 'danger',
+          show: true,
+        });
+        document.getElementsByClassName('co_alert')[0].scrollIntoView();
+      }
+    );
   };
 
   const handleChange = (e) => {
@@ -83,9 +77,7 @@ export const ContactUs = () => {
             <Alert
               //show={formData.show}
               variant={formData.variant}
-              className={`rounded-0 co_alert ${
-                formData.show ? "d-block" : "d-none"
-              }`}
+              className={`rounded-0 co_alert ${formData.show ? 'd-block' : 'd-none'}`}
               onClose={() => setFormdata({ show: false })}
               dismissible
             >
@@ -93,25 +85,28 @@ export const ContactUs = () => {
             </Alert>
           </Col>
           <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">Get in touch</h3>
-            <address>
-              <strong>Email:</strong>{" "}
-              <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-                {contactConfig.YOUR_EMAIL}
-              </a>
+            <p>
+              <FaStar />
+              &nbsp;&nbsp;Antoinette Bumatay-Chan (she/her)
+              <br />
+              <FaEnvelope />
+              &nbsp;&nbsp;<a href={`mailto:${contactConfig.YOUR_EMAIL}`}>{contactConfig.YOUR_EMAIL}</a>
+              <br />
+              <FaMapPin />
+              &nbsp;&nbsp;Portland, OR
               <br />
               <br />
-              {contactConfig.hasOwnProperty("YOUR_FONE") ? (
+              {contactConfig.hasOwnProperty('YOUR_FONE') ? (
                 <p>
                   <strong>Phone:</strong> {contactConfig.YOUR_FONE}
                 </p>
               ) : (
-                ""
+                ''
               )}
-            </address>
+            </p>
             <p>{contactConfig.description}</p>
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
+          <Col lg="7" className="d-flex align-items-center px-5">
             <form onSubmit={handleSubmit} className="contact__form w-100">
               <Row>
                 <Col lg="6" className="form-group">
@@ -120,7 +115,7 @@ export const ContactUs = () => {
                     id="name"
                     name="name"
                     placeholder="Name"
-                    value={formData.name || ""}
+                    value={formData.name || ''}
                     type="text"
                     required
                     onChange={handleChange}
@@ -133,7 +128,7 @@ export const ContactUs = () => {
                     name="email"
                     placeholder="Email"
                     type="email"
-                    value={formData.email || ""}
+                    value={formData.email || ''}
                     required
                     onChange={handleChange}
                   />
@@ -153,7 +148,7 @@ export const ContactUs = () => {
               <Row>
                 <Col lg="12" className="form-group">
                   <button className="btn ac_btn" type="submit">
-                    {formData.loading ? "Sending..." : "Send"}
+                    {formData.loading ? 'Sending...' : 'Send'}
                   </button>
                 </Col>
               </Row>
@@ -161,7 +156,7 @@ export const ContactUs = () => {
           </Col>
         </Row>
       </Container>
-      <div className={formData.loading ? "loading-bar" : "d-none"}></div>
+      <div className={formData.loading ? 'loading-bar' : 'd-none'}></div>
     </HelmetProvider>
   );
 };

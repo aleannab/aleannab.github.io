@@ -19,7 +19,7 @@ const introdata = {
 const dataabout = {
   title: "Hi! I'm Antoinette",
   aboutme:
-    'I have eight years of professional experience bringing concepts to reality in varying scales of interactive media, from intimate augmented reality storytelling on a phone screen to navigating collections of art projected on massive touch film walls. Ultimately, I love combining my interests of art and technology to create beautiful captivating experiences that inspire curiosity, joy, movement, and play.',
+    "Hello! I am Antoinette Bumatay-Chan, a Portland-based creative developer passionate about infusing technology with beauty and meaning. With a background in Mechanical Engineering, I later pursued a Master's in Visualization at Texas A&M, where I fell in love with generative art and interactive technology.\n\nThroughout my career, I've had the privilege of working with diverse teams on a variety of projects, from intimate augmented reality storytelling to large-scale interactive art installations. My creative process often begins with a prompt, guiding me to explore the possibilities of movement and interaction. Iteration is key, as I trust my instincts to lead me down unexpected paths, resulting in experiences that bring joy and beauty to audiences. Beyond aesthetics, I aspire to use my work to raise awareness and start conversations about issues close to my heart, fostering empathy and understanding.\n\nOutside of work, I am a mother of a wonderful 2-year-old toddler and 12-year-old cat, avid reader, nature enthusiast, casual crafter, and aspiring ukulelist.\n\nThanks for peeking into my life. Let's create something extraordinary together!",
 };
 const worktimeline = [
   {
@@ -275,7 +275,7 @@ const dataportfolio = [
 const contactConfig = {
   YOUR_EMAIL: 'ant.bchan@gmail.com',
   description:
-    "I am currently looking for full-time and freelance opportunities.\nIf you'd like to collaborate on something or just want to chat, I'd love to hear from you!",
+    "I am currently looking for contract, full-time, and freelance opportunities.\n\nIf you'd like to collaborate on something or just want to chat, I'd love to hear from you!",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
   YOUR_SERVICE_ID: 'service_vkrdjzh',
