@@ -103,6 +103,7 @@ const dataportfolio = [
     images: [
       {
         id: 0,
+        thumb: '/assets/em-ra-00-thumb.jpg',
         src: '/assets/em-ra-00-1x.jpg',
         src2x: '/assets/em-ra-00-2x.jpg',
         src3x: '/assets/em-ra-00-3x.jpg',
@@ -112,6 +113,7 @@ const dataportfolio = [
       },
       {
         id: 1,
+        thumb: '/assets/em-ra-01-thumb.jpg',
         src: '/assets/em-ra-01-1x.jpg',
         src2x: '/assets/em-ra-01-2x.jpg',
         src3x: '/assets/em-ra-01-3x.jpg',
@@ -121,6 +123,7 @@ const dataportfolio = [
       },
       {
         id: 2,
+        thumb: '/assets/em-ra-02-thumb.jpg',
         src: '/assets/em-ra-02-1x.jpg',
         src2x: '/assets/em-ra-02-2x.jpg',
         src3x: '/assets/em-ra-02-3x.jpg',
@@ -130,6 +133,7 @@ const dataportfolio = [
       },
       {
         id: 3,
+        thumb: '/assets/em-ra-03-thumb.jpg',
         src: '/assets/em-ra-03-1x.jpg',
         src2x: '/assets/em-ra-03-2x.jpg',
         src3x: '/assets/em-ra-03-3x.jpg',
@@ -138,7 +142,7 @@ const dataportfolio = [
         caption: 'Seed packet with QR code to AR experience',
       },
     ],
-    videos: [{ id: 4, src: 'https://player.vimeo.com/video/702912105?h=bf4c10c68' }],
+    videos: [{ id: 4, src: 'https://player.vimeo.com/video/702912105?h=bf4c10c68', w: 640, h: 360 }],
     description:
       'An “Immersive Memory” experience, Emerging Radiance celebrates the untold stories of Japanese American farmers who were taken from their homes and unjustly incarcerated during WWII. In partnership with Creative Director Tani Ikeda and Muralist Michelle Kumata, Invisible Thread harnessed Augmented Reality’s unrivaled ability to tell location-based stories by weaving together art, animation, archival audio recordings, and immersive technology to create a collection of far-reaching experiences that ultimately continue to give voice to the stories of our past for the generations of tomorrow.\n\nEmerging Radiance won the Tribeca X Award for Best Immersive Experience and is currently being considered for a Peabody Award.',
     details: [
@@ -188,13 +192,14 @@ const dataportfolio = [
     hero2x: '/assets/lum-hero-2x.jpg',
     galleryType: 'grid',
     videos: [
-      { id: 21, src: '/assets/lum-00.mp4' },
-      { id: 22, src: '/assets/lum-01.mp4' },
-      { id: 23, src: '/assets/lum-02.mp4' },
+      { id: 21, src: 'https://www.youtube.com/embed/jlZED8Zgsp8?si=5MLS599Lh2eSY71y', w: 315, h: 560 },
+      { id: 22, src: 'https://www.youtube.com/embed/MJPhHF730KU?si=9tyV-raK49wRpHgC', w: 640, h: 360 },
+      { id: 23, src: 'https://www.youtube.com/embed/btsEtQOoktw?si=vf1xrHwqht_d-DuP', w: 640, h: 360 },
     ],
     images: [
       {
         id: 24,
+        thumb: '/assets/lum-03-thumb.jpg',
         src: '/assets/lum-03-1x.jpg',
         src2x: '/assets/lum-03-2x.jpg',
         src3x: '/assets/lum-03-4x.jpg',
@@ -204,6 +209,7 @@ const dataportfolio = [
       },
       {
         id: 25,
+        thumb: '/assets/lum-04-thumb.jpg',
         src: '/assets/lum-04-1x.jpg',
         src2x: '/assets/lum-04-2x.jpg',
         src3x: '/assets/lum-04-2x.jpg',
@@ -213,6 +219,7 @@ const dataportfolio = [
       },
       {
         id: 26,
+        thumb: '/assets/lum-05-thumb.jpg',
         src: '/assets/lum-05-1x.jpg',
         src2x: '/assets/lum-05-2x.jpg',
         src3x: '/assets/lum-05-4x.jpg',
@@ -222,6 +229,7 @@ const dataportfolio = [
       },
       {
         id: 27,
+        thumb: '/assets/lum-06-thumb.jpg',
         src: '/assets/lum-06-1x.jpg',
         src2x: '/assets/lum-06-2x.jpg',
         src3x: '/assets/lum-06-4x.jpg',
@@ -248,9 +256,9 @@ const dataportfolio = [
     hero2x: '/assets/vf-la-hero-2x.jpg',
     galleryType: 'grid',
     videos: [
-      { id: 33, src: '/assets/vf-la-00.mp4' },
-      { id: 34, src: '/assets/vf-la-01.mp4' },
-      { id: 35, src: '/assets/vf-la-02.mp4' },
+      { id: 33, src: 'https://www.youtube.com/embed/Wn4shKhYR70?si=0_z98qgVbHAYSsPa' },
+      { id: 34, src: 'https://www.youtube.com/embed/5v-u4E-GYZs?si=HwRdvmn33zOFp9J0' },
+      { id: 35, src: 'https://www.youtube.com/embed/y1LTtS4uFno?si=HhVhESHa9VCUX6fi' },
     ],
     description:
       'The Landing is an interactive floor that redefines the way people engage with their environment. This was created for the headquarters of VF Corporation. The floor was brought to life through a symphony of modes that transitioned with each season. The modes were designed to evoke a unique and captivating experience inspired by the active season. The visuals would respond to the footsteps of people walking across the floor.\n\n This was a huge collaborative effort with designers to determine the look and feel of the each mode. This particular project was also heavy on the creative code side, allowing me to create various particle systems and procedural shaders to help transform the ordinary floor into a canvas of digital wonder.',

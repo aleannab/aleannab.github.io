@@ -73,22 +73,18 @@ export const Project = ({}) => {
           </div>
         </Row>
         <Row className="sec_sp">
-          {projectData.videos &&
-            projectData.videos.length > 0 &&
-            projectData.videos.map((video, index) => (
-              <div key={video.id} className="d-flex">
-                {video.src.startsWith('http') ? (
-                  <iframe className="w-100 vh-100" src={video.src} title={`Video ${index}`} allowFullScreen></iframe>
-                ) : (
-                  <video className="w-100 vh-100" src={video.src} controls></video>
-                )}
-              </div>
-            ))}
-        </Row>
-        <Row className="sec_sp">
           {projectData.images && projectData.images.length > 0 && (
             <MyGallery galleryID="my-test-gallery" galleryType={projectData.galleryType} images={projectData.images} />
           )}
+        </Row>
+        <Row className="sec_sp">
+          {projectData.videos &&
+            projectData.videos.length > 0 &&
+            projectData.videos.map((video) => (
+              <div key={video.id} className="d-flex justify-content-center align-items-center mb-3">
+                <iframe width={video.w} height={video.h} src={video.src} allowFullScreen></iframe>
+              </div>
+            ))}
         </Row>
       </Container>
     </HelmetProvider>
