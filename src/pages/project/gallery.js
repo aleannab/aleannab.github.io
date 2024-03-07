@@ -42,7 +42,7 @@ const MyGallery = (props) => {
           ))}
         </div>
       ) : (
-        <div className="row row-cols-1 row-cols-sm-2 gap-10 align-items-center justify-content-center" id={props.galleryID}>
+        <div className="row row-cols-1 row-cols-sm-4 gap-10 align-items-center justify-content-center" id={props.galleryID}>
           {props.images.map((image, index) => (
             <a
               href={image.src3x}
@@ -52,11 +52,7 @@ const MyGallery = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src={image.src} //TODO: update to thumbnails
-                alt=""
-                className="img-fluid cursor-pointer rounded-lg transition duration-300 transform hover-scale-105"
-              />
+              <img src={image.thumb} alt="" className="img-fluid cursor-pointer rounded-lg transition duration-300 transform hover-scale-105" />
             </a>
           ))}
         </div>
