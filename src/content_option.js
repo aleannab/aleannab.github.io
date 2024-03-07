@@ -256,9 +256,9 @@ const dataportfolio = [
     hero2x: '/assets/vf-la-hero-2x.jpg',
     galleryType: 'grid',
     videos: [
-      { id: 33, src: 'https://www.youtube.com/embed/Wn4shKhYR70?si=0_z98qgVbHAYSsPa' },
-      { id: 34, src: 'https://www.youtube.com/embed/5v-u4E-GYZs?si=HwRdvmn33zOFp9J0' },
-      { id: 35, src: 'https://www.youtube.com/embed/y1LTtS4uFno?si=HhVhESHa9VCUX6fi' },
+      { id: 33, src: 'https://www.youtube.com/embed/Wn4shKhYR70?si=0_z98qgVbHAYSsPa', w: 560, h: 315 },
+      { id: 34, src: 'https://www.youtube.com/embed/5v-u4E-GYZs?si=HwRdvmn33zOFp9J0', w: 560, h: 315 },
+      { id: 35, src: 'https://www.youtube.com/embed/y1LTtS4uFno?si=HhVhESHa9VCUX6fi', w: 560, h: 315 },
     ],
     description:
       'The Landing is an interactive floor that redefines the way people engage with their environment. This was created for the headquarters of VF Corporation. The floor was brought to life through a symphony of modes that transitioned with each season. The modes were designed to evoke a unique and captivating experience inspired by the active season. The visuals would respond to the footsteps of people walking across the floor.\n\n This was a huge collaborative effort with designers to determine the look and feel of the each mode. This particular project was also heavy on the creative code side, allowing me to create various particle systems and procedural shaders to help transform the ordinary floor into a canvas of digital wonder.',
