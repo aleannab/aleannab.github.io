@@ -272,9 +272,27 @@ const dataportfolio = [
   },
   {
     id: 5,
-    hero: '/assets/prickly-blooms.png',
+    hero: '/assets/prickly-blooms-hero-1x.jpg',
     name: 'Creative Code Sketchbook.',
     externalLink: 'https://www.instagram.com/antoinette.creates',
+  },
+  {
+    id: 6,
+    name: 'Mandala',
+    square: '/assets/mandala-square.jpg',
+    hero: '/assets/mandala-hero-1x.jpg',
+    hero2x: '/assets/mandala-hero-2x.jpg',
+    galleryType: 'grid',
+    videos: [{ id: 41, src: 'https://www.youtube.com/embed/kxXz4SAjgDk?si=N7KCaKkrkkoQQXFX', w: 560, h: 315 }],
+    description:
+      'Mandala is an interactive visualization that embodies what yoga means to me.\n\nThis piece was designed and developed in Processing for my final project during my Creative Technologist internship at AKQA San Francisco.\n\nIt is a visual representation of the mind, heart, and body of a yoga practice.',
+    details: [
+      { id: 42, label: 'Company', content: ['AKQA'], link: 'https://www.akqa.com/' },
+      { id: 43, label: 'Role', content: ['Creative Technologist Intern'] },
+      { id: 44, label: 'Tools', content: ['Processing, Arduino, Kinect'] },
+      { id: 45, label: 'Client', content: ['N/A'] },
+      { id: 46, label: 'Year', content: ['2015'] },
+    ],
   },
 ];
 
