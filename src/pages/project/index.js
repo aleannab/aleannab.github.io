@@ -6,7 +6,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Container, Row, Col } from 'react-bootstrap';
 import { meta, dataportfolio } from '../../content_option';
 
-export const Project = ({}) => {
+export const Project = () => {
   // Get the projectId from the URL
   const { projectId } = useParams();
 
@@ -52,12 +52,12 @@ export const Project = ({}) => {
         </Row>
         <Row className="sec_sp">
           <div className="details d-flex flex-column w-100 flex-md-row justify-content-between gap-5">
-            {projectData.details.map((detail) => (
-              <div className="text d-flex flex-column">
+            {projectData.details.map((detail, index) => (
+              <div key={index} className="text d-flex flex-column">
                 <h3>{detail.label}</h3>
                 <ul className="list-unstyled">
-                  {detail.content.map((item, index) => (
-                    <li key={index}>
+                  {detail.content.map((item, idx) => (
+                    <li key={idx}>
                       {detail.link ? (
                         <a href={detail.link} target="_blank" rel="noopener noreferrer" className="text-decoration-none font-weight-bold">
                           {item}
