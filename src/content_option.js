@@ -17,9 +17,14 @@ const introdata = {
 const dataabout = {
   img: '/assets/profile.jpg',
   aboutme:
-    "Hello! I am Antoinette Bumatay-Chan, a Portland-based creative developer passionate about infusing technology with beauty and meaning. With a background in Mechanical Engineering, I later pursued a Master's in Visualization at Texas A&M, where I fell in love with generative art and interactive technology.\n\nThroughout my career, I've had the privilege of working with diverse teams on a variety of projects, from intimate augmented reality storytelling to large-scale interactive art installations. My creative process often begins with a prompt, guiding me to explore the possibilities of movement and interaction. Iteration is key, as I trust my instincts to lead me down unexpected paths, resulting in experiences that bring joy and beauty to audiences. Beyond aesthetics, I aspire to use my work to raise awareness and start conversations about issues close to my heart, fostering empathy and understanding.\n\nOutside of work, I am a mother of a wonderful 2-year-old toddler and 12-year-old cat, avid reader, nature enthusiast, casual crafter, and aspiring ukulelist.\n\nThanks for peeking into my life. Let's create something extraordinary together!",
+    "Hello! I am Antoinette Bumatay-Chan (she/her), a Portland-based creative developer who merges code, art, and storytelling to craft immersive and interactive experiences. With a background in Mechanical Engineering, I later pursued a Master's in Visualization at Texas A&M University, where I fell in love with generative art and interactive technology. Throughout my career, I've had the privilege of working with diverse teams on a variety of projects, from intimate augmented reality storytelling to large - scale interactive installations.\n\nMy creative process typically begins with a loose direction, allowing room for exploration. I approach technical challenges as opportunities, using curiosity and flexibility to embrace creative detours that shape the final outcome. I aspire to use my work to raise awareness and start conversations about issues close to my heart, including mental health and diversity. Ultimately, I love combining my interests of art and technology to create beautiful captivating visualizations and experiences that inspire curiosity, joy, empathy, and play.\n\nIn addition to my individual pursuits, I am actively seeking full-time, contract, and freelance opportunities where I can apply my skills to innovative and meaningful projects. I enjoy collaborating with teams that push boundaries in art and technology, and I’m excited to bring my expertise to new and exciting challenges.\n\nThanks for peeking into my life. Let's create something extraordinary together!",
 };
 const worktimeline = [
+  {
+    jobtitle: 'Freelance/Parental Break',
+    where: 'Self-Directed',
+    date: '2022 - Now',
+  },
   {
     jobtitle: 'Technical Artist',
     where: 'Invisible Thread',
@@ -77,18 +82,23 @@ const skills = [
   },
 ];
 
-const services = [
+const facts = [
   {
-    title: 'UI & UX Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.',
+    title: 'Loves',
+    description: (
+      <>
+        her family, cats, music that stops you in your tracks, books so captivating you lose track of time, nature’s beauty and tranquility,
+        lemon-flavored baked goods
+      </>
+    ),
   },
   {
-    title: 'Mobile Apps',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.',
-  },
-  {
-    title: 'Wordpress Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.',
+    title: 'Irrational Fears',
+    description: (
+      <>
+        butterfly sanctuaries, trampolines, <a href="https://www.instagram.com/p/C8BjtaCOX-e/">sitting in the middle of a row at any event</a>
+      </>
+    ),
   },
 ];
 
@@ -312,4 +322,4 @@ const socialprofils = {
   linkedin: 'https://www.linkedin.com/in/antbchan/',
   instagram: 'https://instagram.com/antoinette.creates',
 };
-export { meta, dataabout, dataportfolio, worktimeline, skills, services, introdata, contactConfig, socialprofils, logo };
+export { meta, dataabout, dataportfolio, worktimeline, skills, facts, introdata, contactConfig, socialprofils, logo };
