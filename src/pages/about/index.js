@@ -22,7 +22,7 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
-            <img src={dataabout.img} className="profile-img" />
+            <img src={dataabout.img} className="profile-img mb-4" />
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <p>
