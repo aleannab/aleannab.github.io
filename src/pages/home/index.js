@@ -26,7 +26,7 @@ export const Home = () => {
                 <h3 className="fluidz-48 mb-1x">
                   <TextWithLineBreaks text={introdata.tagline} />
                 </h3>
-                <div className="intro_btn-action pb-5">
+                <div className="intro_btn-action pb-3">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
                       My Portfolio
@@ -43,6 +43,8 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                </div>
+                <div className="intro_btn-action pb-5">
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me
