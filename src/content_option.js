@@ -96,7 +96,10 @@ const facts = [
     title: 'Irrational Fears',
     description: (
       <>
-        butterfly sanctuaries, trampolines, <a href="https://www.instagram.com/p/C8BjtaCOX-e/">sitting in the middle of a row at any event</a>
+        butterfly sanctuaries, trampolines,{' '}
+        <a href="https://www.instagram.com/p/C8BjtaCOX-e/" target="_blank">
+          sitting in the middle of a row at any event
+        </a>
       </>
     ),
   },
